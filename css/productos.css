@@ -1,0 +1,184 @@
+.productos-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.title-prod {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+    font-size:medium;
+    text-transform: uppercase;
+}
+
+.sub-title-prod {
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 10px;
+    font-size:small;
+    text-transform:initial;
+}
+
+.párrafo-prod {
+    text-align:initial;
+    margin: 10px;
+    padding-top: 0 8px;
+    font-size: small;
+}
+
+.producto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+    /* align-items: start; */
+    margin: 10px;
+}
+
+.content-producto {
+    width: 100%; 
+    margin-right: 5px;   
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    /* border-radius: 20px; */
+    justify-content: center;    
+    align-items:start;
+    /* cursor: pointer; */
+    /* padding-top: 10px; */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+.content-producto.original:hover {
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(248, 3, 3);
+    box-shadow: 2px 2px 2px rgb(248, 3, 3);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.content-producto.fina:hover {
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.content-producto.ahumada:hover {
+    border-color: rgb(10, 10, 10);
+    border: dotted 2px rgb(10, 10, 10);
+    box-shadow: 2px 2px 2px rgb(10, 10, 10);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.content-producto.pimientas:hover {
+    border-color: rgb(10, 77, 165);
+    border: dotted 2px rgb(10, 77, 165);
+    box-shadow: 2px 2px 2px rgb(10, 77, 165);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.content-producto.suave:hover {
+    border-color: rgb(36, 168, 3);
+    border: dotted 2px rgb(36, 168, 3);
+    box-shadow: 2px 2px 2px rgb(36, 168, 3);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.content-producto.especial:hover {
+    border-color: rgb(199, 98, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(199, 98, 3);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+
+
+.img-producto{
+    width: 100%;
+    max-height: 350px;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    /* border-radius: 20px; */
+
+}
+
+.img-producto {
+    /* filter: grayscale(100%); */
+    transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+}
+
+/* Cambia la imagen a color cuando se hace hover */
+.img-producto:hover {
+    filter: grayscale(0%);
+}
+
+
+
+/* Estilos para pantallas más pequeñas (menos de 768px) */
+@media screen and (max-width: 1000px) {
+    .content-producto {
+        width: 45%; /* Ajusta el ancho para mostrar dos imágenes por fila */
+    }
+    .productos-gallery {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    .img-producto{
+        object-fit: cover;
+    }
+
+    .img-producto {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .img-producto:hover {
+        filter: grayscale(0%);
+    }
+    
+}
+
+/* Estilos para pantallas aún más pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    .content-producto {
+        width: 90%; /* Muestra una imagen por fila */
+    }
+    .productos-gallery {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    .img-producto{
+        object-fit: cover;
+    }
+
+    .img-producto {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .img-producto:hover {
+        filter: grayscale(0%);
+    }
+    
+}

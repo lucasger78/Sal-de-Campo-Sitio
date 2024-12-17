@@ -1,0 +1,19 @@
+.history-01{
+    max-width: 35%;
+    height: auto;
+}
+
+.history-02{
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.history{
+    justify-content: center;
+}
+
+.logo-nav{
+    width: 30%;
+    height: auto;
+}

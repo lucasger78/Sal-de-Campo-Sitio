@@ -1,0 +1,228 @@
+.logoSC {
+    margin-left: -150px;
+    width: 200px;
+    height: 200px;
+}
+
+#btn-wsp {
+    background-color: rgb(199, 3, 3);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+#btn-wsp:hover {
+    background-color: rgb(199, 98, 3, 0.8);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+}
+
+.ico-wts {
+    color: white;
+    margin-right: 5px;
+    /* transition: all .5s ease; */
+}
+
+.redes-icons {
+    display: flex;
+    /* max-height: 1000%; */
+    margin-left: 400%;
+    margin-top: 20%;
+    /* transition: all .5s ease;     */
+}
+
+.ico-wts:hover {
+    transform: translate(2px);
+}
+
+.redes-logos {
+    width: 50px;
+    height: 50px;
+    /* opacity: 0.5; */
+    margin: 10px;
+    transition: all .5s ease;
+
+}
+
+.redes-logos:hover {
+    transform: translate(2px);
+}
+
+.ig:hover {
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(219, 36, 51);
+    border-radius: 20px;
+}
+
+.tk:hover {
+    border: dotted 2px rgb(53, 240, 240);
+    box-shadow: 2px 2px 2px rgb(219, 36, 51);
+    border-radius: 10px;
+}
+
+.wts:hover {
+    border: dotted 2px rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(20, 196, 122);
+    border-radius: 50px;
+}
+
+.mail-text {
+    color: rgb(199, 98, 3);
+}
+
+.wts-text {
+    font-weight: 900;
+}
+
+/* .p-bg {
+
+    background-color: rgba(241, 99, 99, 0.3);
+} */
+
+/* RESPONSIVE */
+
+@media (max-width:992px) {
+
+    .ico-wts {
+        color: white;
+        margin-right: 5px;
+    }
+
+    .redes-icons {
+        display: flex;
+        /* max-height: 1000%; */
+        margin-left: 240%;
+        margin-top: 10%;
+
+
+    }
+
+    .redes-logos {
+        width: 40px;
+        height: 40px;
+        /* opacity: 0.5; */
+        margin: 10px;
+        transition: all .5s ease;
+    }
+
+    .redes-logos:hover {
+        transform: translate(2px);
+    }
+
+    .ig:hover {
+        border: dotted 2px rgb(199, 98, 3);
+        box-shadow: 2px 2px 2px rgb(219, 36, 51);
+        border-radius: 20px;
+    }
+
+    .tk:hover {
+        border: dotted 2px rgb(53, 240, 240);
+        box-shadow: 2px 2px 2px rgb(219, 36, 51);
+        border-radius: 10px;
+    }
+
+    .wts:hover {
+        border: dotted 2px rgb(255, 255, 255);
+        box-shadow: 2px 2px 2px rgb(20, 196, 122);
+        border-radius: 50px;
+    }
+
+    .mail-text {
+        color: rgb(199, 98, 3);
+    }
+
+    .logoSC {
+        margin-left: -10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    #btn-wsp {
+        background-color: rgb(199, 3, 3);
+        border: none;
+    }
+
+    #btn-wsp:hover {
+        background-color: rgb(199, 98, 3, 0.8);
+        border: dotted 2px rgb(199, 98, 3);
+        box-shadow: 2px 2px 2px rgb(36, 115, 219);
+        color: rgb(36, 115, 219);
+    }
+
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .ico-wts {
+        color: white;
+        margin-right: 5px;
+    }
+
+    .redes-icons {
+        display: flex;
+        /* max-height: 1000%; */
+        margin-left: -15%;
+        margin-right: 50%;
+        margin-top: 50%;
+    }
+
+    .redes-logos {
+        width: 40px;
+        height: 40px;
+        /* opacity: 0.5; */
+        margin: 10px;
+        margin-right: 50%;
+        transition: all .5s ease;
+    }
+
+    .redes-logos:hover {
+        transform: translate(2px);
+    }
+
+    .ig:hover {
+        border: dotted 2px rgb(199, 98, 3);
+        box-shadow: 2px 2px 2px rgb(219, 36, 51);
+        border-radius: 20px;
+    }
+
+    .tk:hover {
+        border: dotted 2px rgb(53, 240, 240);
+        box-shadow: 2px 2px 2px rgb(219, 36, 51);
+        border-radius: 10px;
+    }
+
+    .wts:hover {
+        border: dotted 2px rgb(255, 255, 255);
+        box-shadow: 2px 2px 2px rgb(20, 196, 122);
+        border-radius: 50px;
+    }
+
+    .mail-text {
+        color: rgb(199, 98, 3);
+    }
+
+
+    .logoSC {
+        margin-left: 100%;
+        margin-right: 50%;
+        display: flex;
+        width: 150px;
+        height: 150px;
+    }
+
+    #btn-wsp {
+        background-color: rgb(199, 3, 3);
+        border: none;
+    }
+
+    #btn-wsp:hover {
+        background-color: rgb(199, 98, 3, 0.8);
+        border: dotted 2px rgb(199, 98, 3);
+        box-shadow: 2px 2px 2px rgb(36, 115, 219);
+        color: rgb(36, 115, 219);
+    }
+
+}
