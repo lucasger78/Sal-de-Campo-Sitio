@@ -9,7 +9,12 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 @media (max-width: 767px) {
 
-
+  .boton{
+    background-color: red;
+    /* color: white; */
+    /* margin-top: 30%; */
+    /* margin-left: 80%; */
+  }
 
 }
 
@@ -84,10 +89,17 @@ figure, p{
   padding-top: 30px;
 }
 
-
+.boton{
+  background-color: red;
+  /* color: white; */
+  /* margin-top: 30%; */
+  /* margin-left: 80%; */
+}
   
  
 }
+
+
 
 
 
@@ -232,11 +244,18 @@ figure, p{
 }
 
 
-
+.boton{
+  background-color: red;
+  /* color: white; */
+  /* margin-top: 30%; */
+  /* margin-left: 80%; */
+}
 
 
 
 }
+
+
 
 
 
@@ -249,9 +268,16 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .boton{
+    background-color: red;
+    /* color: white; */
+    /* margin-top: 30%; */
+    /* margin-left: 80%; */
+  }
 
 
 }
+
 
 
 /*  Retina media query.
@@ -263,6 +289,11 @@ px      68    160    252    344    436    */
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   
-  
+    .boton{
+      background-color: red;
+      /* color: white; */
+      /* margin-top: 30%; */
+      /* margin-left: 80%; */
+    }
   
 }
