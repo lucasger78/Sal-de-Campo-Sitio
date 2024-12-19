@@ -459,9 +459,10 @@ width: 11px;
 
 .project-filter ul li a:hover,
 .project-filter ul li a.active {
-    background-color: #00C7FC;
+    background-color: #db2433;
     color: #fff;
 }
+
 
 .mix {
     display: none;
@@ -475,7 +476,7 @@ width: 11px;
 }
 
 .plus {
-  background: url("../img/icons/plus.png") no-repeat scroll center center #0faed9;
+  background: url("../img/icons/plus.png") no-repeat scroll center center #db2433;
   border-radius: 50%;
   display: block;
   height: 80px;
@@ -491,6 +492,8 @@ width: 11px;
          -o-transition: 0.3s ease-out 0s;
             transition: 0.3s ease-out 0s;
 }
+
+
 
 figcaption.mask {
   background-color: #fff;
