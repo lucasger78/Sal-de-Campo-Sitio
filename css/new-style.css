@@ -55,7 +55,7 @@
     align-items: start !important; /* Centra los íconos verticalmente */
     gap: 20px; /* Espacio entre íconos */
     margin-top: 30px;
-    margin-left: 40px;
+    margin-left: -65px;
     
 }
 
