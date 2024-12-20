@@ -109,11 +109,11 @@
 
 
 
-.original{
+.original-span{
     color: rgb(248, 3, 3) !important;
     font-weight: bold;    
 }
-.fina{
+.fina-1{
     color: rgb(36, 115, 219) !important;
     font-weight: bold;    
 }
@@ -123,22 +123,22 @@
     font-weight: bold;    
 }
 
-.ahumada{
+.ahumada-span{
     color: rgb(10, 10, 10) !important;
     font-weight: bold;
 }
 
-.pimientas{
+.pimientas-span{
     color: rgb(10, 77, 165) !important;
     font-weight: bold;
 }
 
-.suave{
+.suave-span{
     color: rgb(36, 168, 3) !important;
     font-weight: bold;
 }
 
-.especial{
+.especial-span{
     color:rgb(199, 98, 3) !important;
     font-weight: bold;
 }
@@ -223,6 +223,10 @@
     transform: scale(1.1);
     color: rgb(255, 255, 255);   
     
+}
+
+.p-copyright{
+    opacity: 0;
 }
 
 

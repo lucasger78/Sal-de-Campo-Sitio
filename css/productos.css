@@ -276,7 +276,7 @@
         transform: translate(0px, -8px);
     }
     
-    .content-producto.fina:hover {
+    .content-producto.fina:hover{
         border-color: rgb(248, 3, 3);
         border: dotted 2px rgb(199, 98, 3);
         box-shadow: 2px 2px 2px rgb(36, 115, 219);
