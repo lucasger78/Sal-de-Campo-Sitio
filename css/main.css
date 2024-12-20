@@ -956,7 +956,7 @@ figcaption.mask span {
 }
 
 .footer-social ul li a:hover {
-  color: #00C7FC;
+  color: rgb(219, 36, 51);
 }
 
 .copyright {
@@ -966,16 +966,16 @@ figcaption.mask span {
 }
 
 .copyright a {
-    color: #00C7FC;
+    color: rgb(219, 36, 51);
 }
 
 .copyright a:hover {
     color: #fff;
 }
 
-.copyright p {
+/* .copyright p {
 
-}
+} */
 
 .copyright p:first-child {
     margin-bottom: 15px;

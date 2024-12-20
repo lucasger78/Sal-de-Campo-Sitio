@@ -55,7 +55,7 @@
     align-items: start !important; /* Centra los íconos verticalmente */
     gap: 20px; /* Espacio entre íconos */
     margin-top: 30px;
-    margin-left: -65px;
+    margin-left: 40px;
     
 }
 
@@ -68,6 +68,17 @@
 .redes-nav .icons-nav img:hover {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
 }
+
+#redes-footer{    
+     display: flex;
+     justify-content:center; /* Centra los íconos horizontalmente */
+     align-items: start !important; /* Centra los íconos verticalmente */
+     gap: 20px; /* Espacio entre íconos */
+     margin-top: 30px;
+     margin-left: -10px;      
+}
+
+
 
 .ig:hover {
     border: dotted 2px rgb(199, 98, 3);
@@ -90,5 +101,131 @@
 .portfolio-item{
     margin-bottom: 20px ;
 }
+
+.favicon{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.original{
+    color: rgb(248, 3, 3) !important;
+    font-weight: bold;    
+}
+.fina{
+    color: rgb(36, 115, 219) !important;
+    font-weight: bold;    
+}
+
+.fina-2{
+    color: rgb(199, 98, 3) !important;
+    font-weight: bold;    
+}
+
+.ahumada{
+    color: rgb(10, 10, 10) !important;
+    font-weight: bold;
+}
+
+.pimientas{
+    color: rgb(10, 77, 165) !important;
+    font-weight: bold;
+}
+
+.suave{
+    color: rgb(36, 168, 3) !important;
+    font-weight: bold;
+}
+
+.especial{
+    color:rgb(199, 98, 3) !important;
+    font-weight: bold;
+}
+
+.contact-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-contact{
+    width: 25px;
+    height: 25px;
+}
+
+.whatsapp{
+    border: solid 1px  rgb(248, 3, 3);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+
+.whatsapp:hover {
+    background-color: red;
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    
+}
+
+.email{
+    border: solid 1px  rgb(248, 3, 3);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    margin-right: 5px;
+}
+
+
+.email:hover {
+    background-color: red;
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);   
+    
+}
+
+.gps{
+    border: solid 1px  rgb(248, 3, 3);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    margin-left: 5px;
+    
+}
+
+
+.gps:hover {
+    background-color: red;
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);   
+    
+}
+
+
+ 
 
 
