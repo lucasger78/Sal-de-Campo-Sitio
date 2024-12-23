@@ -98,7 +98,11 @@
     border-radius: 50px;
 }
 
-.portfolio-item{
+.nav-ideas{
+    font-weight: 700;
+}
+
+.producto-item{
     margin-bottom: 20px ;
 }
 
@@ -162,6 +166,10 @@
     height: 25px;
 }
 
+.contact-icon {
+    text-align: center;
+}
+
 .whatsapp{
     border: solid 1px  rgb(248, 3, 3);
     color: rgb(0, 0, 0);
@@ -170,6 +178,24 @@
     margin-left: 5px;
     margin-right: 5px;
     
+}
+
+#text-wsp{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+
+#text-mail{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+
+#text-gps{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
 }
 
 

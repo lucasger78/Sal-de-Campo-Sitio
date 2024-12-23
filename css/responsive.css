@@ -69,7 +69,7 @@ figcaption.mask span{
     margin-left: -15%;
 }
 
-.portfolio-item:hover .plus{
+.producto-item:hover .plus{
   top: 40%;
 }
 
@@ -207,7 +207,7 @@ px      68    160    252    */
   margin-bottom: 0px;
 }
 
-.portfolio-item{
+.producto-item{
   width: 100%;
 }
 

@@ -434,7 +434,7 @@ width: 11px;
 
 
 /*============================================================
-    Portfolio
+    Ideas & Recetas
 ============================================================*/
 
 #projects {
@@ -468,7 +468,7 @@ width: 11px;
     display: none;
 }
 
-.portfolio-item {
+.producto-item {
     position: relative;
     float: left;
     overflow: hidden;
@@ -510,11 +510,11 @@ figcaption.mask {
             transition: 0.3s ease-out 0s;
 }
 
-.portfolio-item:hover figcaption.mask {
+.producto-item:hover figcaption.mask {
     bottom: 0;
 }
 
-.portfolio-item:hover .plus {
+.producto-item:hover .plus {
     top: 30%;
 }
 
