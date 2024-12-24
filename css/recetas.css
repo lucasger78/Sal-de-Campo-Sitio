@@ -1,0 +1,37 @@
+.container-recetas {
+    display: flex; /* Activa el diseño flexbox */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 20px; /* Agrega un margen superior para separar del header */
+}
+
+.image img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene las proporciones */
+    max-height: 300px; /* Tamaño máximo de la imagen */
+}
+
+.content {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.content h2 {
+    margin-bottom: 15px; /* Espacio entre el h2 y el resto */
+}
+
+.content h4 {
+    margin-top: 15px; /* Espacio superior entre el h4 y lo anterior */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.content ul,
+.content ol {
+    margin-top: 10px; /* Espacio entre listas y títulos */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding-left: 20px; /* Sangría en listas */
+}
+
+.content ul li,
+.content ol li {
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
