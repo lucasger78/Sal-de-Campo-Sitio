@@ -1,0 +1,370 @@
+/* NEWS-STYLE.CSS */
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    .history-01, .history-02 {
+        max-width: 40%;
+    }
+
+    .boton {
+        margin-top: 15%;
+        margin-left: 70%;
+    }
+
+    .logo-nav {
+        width: 25%;
+    }
+
+    .redes-nav {
+        gap: 30px;
+        margin-left: -50px;
+    }
+
+    .whatsapp, .email, .gps {
+        width: 500px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .history-01 {
+        max-width: 50%;
+    }
+
+    .history-02 {
+        max-width: 60%;
+        margin-bottom: 50px;
+    }
+
+    .boton {
+        margin-top: 10%;
+        margin-left: 60%;
+    }
+
+    .logo-nav {
+        width: 35%;
+    }
+
+    .redes-nav {
+        gap: 15px;
+        margin-left: -30px;
+    }
+
+    .whatsapp, .email, .gps {
+        width: 350px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 767px) {
+    .history-01, .history-02 {
+        max-width: 90%;
+    }
+
+    .boton {
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .logo-nav {
+        width: 50%;
+    }
+
+    .redes-nav {
+        gap: 10px;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .whatsapp, .email, .gps {
+        width: 100%;
+    }
+
+    .titulo-ideas {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .contact-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* NEWS.CSS */
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 1025px) {
+    .logoSC {
+        margin-left: -100px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .redes-icons {
+        margin-left: 300%;
+        margin-top: 10%;
+    }
+
+    .redes-logos {
+        width: 60px;
+        height: 60px;
+    }
+
+    #btn-wsp {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logoSC {
+        margin-left: -50px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .redes-icons {
+        margin-left: 150%;
+        margin-top: 5%;
+    }
+
+    .redes-logos {
+        width: 45px;
+        height: 45px;
+    }
+
+    #btn-wsp {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 767px) {
+    .logoSC {
+        margin-left: 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .redes-icons {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 5%;
+        align-items: center;
+    }
+
+    .redes-logos {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    #btn-wsp {
+        font-size: 14px;
+        padding: 5px 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* PRODUCTOS.CSS */
+
+/* Pantallas grandes (desktop, ≥ 1025px) */
+@media (min-width: 1025px) {
+    .productos-gallery {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .content-producto {
+        width: 22%; /* Cuatro productos por fila */
+        margin: 10px;
+    }
+
+    .img-producto {
+        max-height: 100px;
+    }
+
+    .title-prod {
+        font-size: large;
+    }
+
+    .párrafo-prod {
+        font-size: medium;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .productos-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .content-producto {
+        width: 45%; /* Dos productos por fila */
+        margin: 10px;
+    }
+
+    .img-producto {
+        max-height: 80px;
+    }
+
+    .title-prod {
+        font-size: medium;
+    }
+
+    .párrafo-prod {
+        font-size: small;
+    }
+}
+
+/* Móviles (≤ 767px) */
+@media screen and (min-width: 720px) {
+    .productos-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content-producto {
+        width: 90%; /* Un producto por fila */
+        margin: 5px 0;
+    }
+
+    .img-producto {
+        max-height: 40px;
+    }
+
+    .title-prod {
+        font-size: small;
+    }
+
+    .párrafo-prod {
+        font-size: x-small;
+    }
+}
+
+
+/* RECETAS.CSS */
+
+/* Pantallas grandes (desktop, ≥ 1025px) */
+@media (min-width: 1025px) {
+    .titulo-ideas {
+        font-size: 48px;
+        padding-top: 20px;
+    }
+
+    .container-recetas {
+        gap: 60px;
+    }
+
+    .container-recetas .content {
+        max-width: 700px;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .content-recetas {
+        height: 90%;
+        width: 40%;
+    }
+
+    .receta-area {
+        max-width: 60%;
+    }
+
+    .icon-detalles {
+        width: 35px;
+        height: 35px;
+    }
+
+    .porcion, .reloj, .dificultad {
+        width: 500px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo-ideas {
+        font-size: 36px;
+        padding-top: 15px;
+    }
+
+    .container-recetas {
+        gap: 40px;
+    }
+
+    .container-recetas .content {
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .content-recetas {
+        height: 80%;
+        width: 50%;
+    }
+
+    .receta-area {
+        max-width: 70%;
+    }
+
+    .icon-detalles {
+        width: 30px;
+        height: 30px;
+    }
+
+    .porcion, .reloj, .dificultad {
+        width: 400px;
+    }
+}
+
+/* Móviles (≤ 767px) */
+@media (max-width: 767px) {
+    .titulo-ideas {
+        font-size: 24px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .container-recetas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-recetas .content {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .content-recetas {
+        height: auto;
+        width: 90%;
+    }
+
+    .receta-area {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .icon-detalles {
+        width: 25px;
+        height: 25px;
+    }
+
+    .porcion, .reloj, .dificultad {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
