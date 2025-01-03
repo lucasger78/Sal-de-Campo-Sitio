@@ -1,37 +1,308 @@
+
+/* Ajuste para Ideas y Recetas */
+.titulo-ideas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    font-size: 36px; /* Tamaño uniforme con otras secciones */
+    color: rgb(36, 115, 219); /* Color consistente con fina-1 */
+}
+
 .container-recetas {
-    display: flex; /* Activa el diseño flexbox */
-    align-items: flex-start; /* Alinea los elementos arriba */
-    gap: 20px; /* Espacio entre la imagen y el texto */
-    margin-top: 20px; /* Agrega un margen superior para separar del header */
+    display: flex;
+    flex-wrap: wrap; /* Permite adaptarse a pantallas pequeñas */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
 }
 
-.image img {
-    max-width: 100%; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantiene las proporciones */
-    max-height: 300px; /* Tamaño máximo de la imagen */
+.container-recetas .image img {
+    max-width: 100%; /* Responsive para todos los tamaños */
+    border-radius: 10px; /* Consistencia con hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Ligero sombreado */
+    transition: transform 0.3s ease-in-out;
 }
 
-.content {
-    flex: 1; /* Ocupa el espacio restante */
+.container-recetas .image img:hover {
+    transform: scale(1.1); /* Zoom al hover */
 }
 
-.content h2 {
-    margin-bottom: 15px; /* Espacio entre el h2 y el resto */
+.container-recetas .content {
+    max-width: 500px; /* Asegura que no se desborde */
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.content h4 {
-    margin-top: 15px; /* Espacio superior entre el h4 y lo anterior */
-    margin-bottom: 10px; /* Espacio inferior */
+.container-recetas .content h2 {
+    color: rgb(248, 3, 3); /* Consistencia con original-span */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.content ul,
-.content ol {
-    margin-top: 10px; /* Espacio entre listas y títulos */
-    margin-bottom: 20px; /* Espacio inferior */
-    padding-left: 20px; /* Sangría en listas */
+.container-recetas .content h4 {
+    color: rgb(36, 115, 219);
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.content ul li,
-.content ol li {
-    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+.container-recetas .content ul, 
+.container-recetas .content ol {
+    padding-left: 20px;
 }
+
+.container-recetas .content ul li, 
+.container-recetas .content ol li {
+    margin-bottom: 10px;
+}
+
+/* Estilo del botón tienda para recetas */
+.boton {
+    background-color: transparent;    
+    border-color: rgb(248, 3, 3); /* Consistencia */
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.boton a {
+    color: rgb(248, 3, 3);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: rgb(248, 3, 3); /* Hover rojo */
+    border-color: rgb(199, 98, 3);
+    box-shadow: 2px 2px 5px rgb(36, 115, 219);
+}
+
+.redes-nav {
+    display: flex;
+    justify-content:center; /* Centra los íconos horizontalmente */
+    align-items: start !important; /* Centra los íconos verticalmente */
+    gap: 20px; /* Espacio entre íconos */
+    margin-top: 30px;
+    margin-left: -65px;
+    
+}
+
+.redes-nav .icons-nav img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Efecto de zoom */
+}
+
+.redes-nav .icons-nav img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.logoSC {
+    margin-left: -150px;
+    width: 200px;
+    height: 200px;
+}
+
+#btn-wsp {
+    background-color: rgb(199, 3, 3);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+#btn-wsp:hover {
+    background-color: rgb(199, 98, 3, 0.8);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+}
+
+.ico-wts {
+    color: white;
+    margin-right: 5px;
+    /* transition: all .5s ease; */
+}
+
+.redes-icons {
+    display: flex;
+    /* max-height: 1000%; */
+    margin-left: 400%;
+    margin-top: 20%;
+    /* transition: all .5s ease;     */
+}
+
+.ico-wts:hover {
+    transform: translate(2px);
+}
+
+.redes-logos {
+    width: 50px;
+    height: 50px;
+    /* opacity: 0.5; */
+    margin: 10px;
+    transition: all .5s ease;
+
+}
+
+.redes-logos:hover {
+    transform: translate(2px);
+}
+
+.ig:hover {
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(219, 36, 51);
+    border-radius: 10px;
+}
+
+.tk:hover {
+    border: dotted 2px rgb(53, 240, 240);
+    box-shadow: 2px 2px 2px rgb(219, 36, 51);
+    border-radius: 5px;
+}
+
+.wts:hover {
+    border: dotted 2px rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(20, 196, 122);
+    border-radius: 50px;
+}
+
+
+
+.boton{
+    background-color: transparent;    
+    border-color: rgb(248, 3, 3);
+    margin-top: 30%;
+    margin-left: 80%;
+}
+
+
+
+.carro{
+    padding-right: 10%;
+}
+
+
+.receta-area {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* O el espacio que necesites */
+    /* background-color: rgba(248, 3, 3, 0.4); */
+    max-width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.recetas.bg{
+    padding: 0;
+}
+
+.content-recetas{
+    height: 80%;
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+#nav-text{
+    color: rgb(248, 3, 3)
+}
+
+.detalles-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.recetas-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-detalles{
+    width: 25px;
+    height: 25px;
+}
+
+.detalles-icon {
+    text-align: center;
+}
+
+
+.text-detail{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+
+
+.porcion{
+    border: solid 1px  rgb(248, 3, 3);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.porcion:hover {
+    background-color: red;
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    
+}
+
+.reloj{
+    border: solid 1px  rgb(248, 3, 3);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    margin-right: 5px;
+}
+
+
+.reloj:hover {
+    background-color: red;
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);   
+    
+}
+
+.dificultad{
+    border: solid 1px  rgb(248, 3, 3);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    margin-left: 5px;
+    
+}
+
+
+.dificultad:hover {
+    background-color: red;
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    color: rgb(36, 115, 219);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);   
+    
+}
+
+
+
+
+

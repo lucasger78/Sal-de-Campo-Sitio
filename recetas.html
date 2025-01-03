@@ -14,7 +14,7 @@
         <meta charset="utf-8">
 
         <!-- Site Title -->
-        <title>Sal de Campo - Ideas & Recetas</title>
+        <title>Sal de Campo</title>
         <link rel="icon" href="img/logo-SC.png" type="image/png" class="favicon">
         <!--
         Google Fonts
@@ -45,6 +45,8 @@
         <link rel="stylesheet" href="css/productos.css">
         <!-- Recetas -->
         <link rel="stylesheet" href="css/recetas.css">
+
+        <!-- <link rel="stylesheet" href="css/recetas-extra.css"> -->
 		
 		
 		<!-- Modernizer Script for old Browsers -->
@@ -81,13 +83,13 @@
                       <!-- Social Icons -->
             <div class="redes-nav">
                 <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
-                    <img class="ig" src="img/icons/icons-instagram.png" alt="instagram">
+                    <img class="ig" src="img/icons/icons-instagram-recetas.png" alt="instagram">
                 </a>
                 <a class="icons-nav" href="https://www.tiktok.com/@saldecampo?lang-es" target="_blank">
-                    <img class="tk" src="img/icons/icons-tik-tok.png" alt="tiktok">
+                    <img class="tk" src="img/icons/icons-tik-tok-recetas.png" alt="tiktok">
                 </a>
                 <a class="icons-nav" href="https://walink.co/bd22ab" target="_blank">
-                    <img class="wts" src="img/icons/icons-whatsapp.png" alt="whatsapp">
+                    <img class="wts" src="img/icons/icons-whatsapp-recetas.png" alt="whatsapp">
                 </a>
             </div>
             <!-- /Social Icons -->
@@ -98,12 +100,12 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="#home">Inicio</a></li>
-                            <li><a href="#about">Nosotros</a></li>
-                            <li><a href="#producto">Productos</a></li>
-                            <li><a href="#idea">Ideas y Recetas</a></li>                            
-                            <li><a href="#contact">Contacto</a></li>
-                            <li class="tienda"><button class="boton btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo.png" alt="carrito Logo" class="carro">Tienda</a></button></li>
+                            <li class="current"><a href="index.html#home" id="nav-text">Inicio</a></li>
+                            <li><a href="index.html#about" id="nav-text">Nosotros</a></li>
+                            <li><a href="index.html#producto" id="nav-text">Productos</a></li>
+                            <li><a href="index.html#idea" id="nav-text">Ideas y Recetas</a></li>                            
+                            <li><a href="index.html#contact" id="nav-text">Contacto</a></li>
+                            <li class="tienda"><button class="boton btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">Tienda</a></button></li>
                         </ul>
                         
                     </nav>
@@ -112,33 +114,152 @@
 
             </div>
         </header>
-        <div class="container">
-            <h1 class="titulo-ideas">Ideas & Recetas</h1>
-            <div class="container-recetas">
-                <div class="image">
-                    <img src="img/recetas/original-1.jpg" alt="receta 1">
-                </div>
-                <div class="content">
-                    <h2>Sandwich Vegetariano</h2>
-                    <h4>Ingredientes:</h4>
-                    <ul>
-                        <li>ingrediente 100 gr</li>
-                        <li>ingrediente 2 un</li>
-                        <li>ingrediente 350 gr</li>
-                        <li>ingrediente 500 ml</li>
-                        <li>ingrediente a gusto</li>
-                        <li>ingrediente 250 gr</li>
-                        <li>ingrediente 4 un</li>
-                    </ul>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+
+
+        <!--
+        Home Slider
+        ==================================== -->
+        <section id="home">  
+                <div>
+                    <!-- <div class="recetas-bg" style="background-image: url('img/slider/bg1a.jpg')" >  -->
+                        <div class="receta-area">
+                            <div class="container">
+                                <h1 class="titulo-ideas">Ideas & Recetas</h1>
+                                
+                                <div class="container-recetas">
+                                    <div class="col-md-4 col-sm-3 wow fadeInRight detalles-items">
+                                        <div class="recetas-details reloj">
+                                            <br><span class="text-detail">Tiempo de Cocción <img class="icon-detalles" src="img/icons/time-icon.png" alt="reloj"></span>
+                                            <p class="text-detail">15 min</p><br> 
+                                        </div>
+                                        <div class="recetas-details porcion">
+                                            <br><span class="text-detail">Porciones <img class="icon-detalles" src="img/icons/porcion-icon.png" alt="reloj"></span>
+                                            <p class="text-detail">Rinde 8 porciones</p><br> 
+                                        </div>
+                                        <div class="recetas-details dificultad">
+                                            <br><span class="text-detail">Dificultad <img class="icon-detalles" src="img/icons/dificultad-icon.png" alt="reloj"></span>
+                                            <p class="text-detail">Media</p><br> 
+                                        </div>
+                                      
+                
+                                        
+                                    </div> <!-- .col-md-4 -->
+                                    <div class="image">
+                                        <img src="img/recetas/original-1.jpg" alt="receta 1">
+                                    </div>
+                                    <div class="content content-recetas">
+                                        <h2>Sandwich Vegetariano</h2>
+                                        <h4>Ingredientes:</h4>
+                                        <ul>
+                                            <li>ingrediente 100 gr</li>
+                                            <li>ingrediente 2 un</li>
+                                            <li>ingrediente 350 gr</li>
+                                            <li>ingrediente 500 ml</li>
+                                            <li>ingrediente a gusto</li>
+                                            <li>ingrediente 250 gr</li>
+                                            <li>ingrediente 4 un</li>
+                                        </ul>
+                                        <h4>Preparación:</h4>
+                                        <ol>
+                                            <li>Preparar los ingredientes</li>
+                                            <li>Mezclar los ingredientes</li>
+                                            <li>Armar el sandwich</li>
+                                            <li>Disfrutar</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      
+                       
+                    <!-- </div>     -->
+               
+            </div>
             
-                    <h4>Preparación:</h4>
-                    <ol>
-                        <li>Preparar los ingredientes</li>
-                        <li>Mezclar los ingredientes</li>
-                        <li>Armar el sandwich</li>
-                        <li>Disfrutar</li>
-                    </ol>
+        </section>
+       
+
+        <!--
+        End #home Slider
+        ========================== -->
+       
+</body>
+ <!--
+        #footer
+        ========================== -->
+        <footer id="footer" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="footer-logo wow fadeInDown">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+
+                        <div class="footer-social wow fadeInUp">
+                            <h3>Encontranos en nuestras Redes</h3>
+                             <!-- Social Icons -->
+                        <div class="redes-nav" id="redes-footer">
+                            <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
+                                <img class="ig" src="img/icons/icons-instagram.png" alt="instagram">
+                            </a>
+                            <a class="icons-nav" href="https://www.tiktok.com/@saldecampo?lang-es" target="_blank">
+                                <img class="tk" src="img/icons/icons-tik-tok.png" alt="tiktok">
+                            </a>
+                            <a class="icons-nav" href="https://walink.co/bd22ab" target="_blank">
+                                <img class="wts" src="img/icons/icons-whatsapp.png" alt="whatsapp">
+                            </a>
+                        </div>
+            <!-- /Social Icons -->
+                        </div>
+
+                        <div class="copyright">
+
+                            <p class="p-copyright" >Theme by <a href="http://graphberry.com">GraphBerry.com</a> Developed by <a target="_blank" href="http://www.themefisher.com">Themefisher</a></p>
+                           
+                            <p>by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-</body>
+        </footer>
+        <!--
+        End #footer
+        ========================== -->
+
+
+        <!--
+        JavaScripts
+        ========================== -->
+        
+        <!-- main jQuery -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- jquery.nav -->
+        <script src="js/jquery.nav.js"></script>
+        <!-- Portfolio Filtering -->
+        <script src="js/jquery.mixitup.min.js"></script>
+        <!-- Fancybox -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <!-- Parallax sections -->
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+        <!-- jQuery Appear -->
+        <script src="js/jquery.appear.js"></script>
+        <!-- countTo -->
+        <script src="js/jquery-countTo.js"></script>
+        <!-- owl carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- WOW script -->
+        <script src="js/wow.min.js"></script>
+        <!-- theme custom scripts -->
+        <!-- <script src="js/main.js"></script> -->
+        <!-- Filtro menú Galería -->
+        <script src="js/galeria-filtro.js"></script>
+        <!-- nav scroll -->
+        <script src="js/receta-nav.js"></script>
+    </body>
 </html>
