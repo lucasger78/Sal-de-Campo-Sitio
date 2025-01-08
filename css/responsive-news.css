@@ -303,7 +303,7 @@
   
     /* Menú toggle */
     .navbar-toggle {
-      margin-right: 15px; /* Mueve el toggle más hacia adentro */
+      margin-right: 20px; /* Mueve el toggle más hacia adentro */
     }
   
     /* Redes sociales */
@@ -312,7 +312,7 @@
       justify-content: center; /* Centra los íconos horizontalmente */
       align-items: center; /* Centra los íconos verticalmente */
       gap: 15px; /* Espacio entre los íconos */
-      margin-left: 0; /* Elimina el margen negativo en móviles */
+      margin-right: 50%; /* Elimina el margen negativo en móviles */
       margin-top: 20px; /* Ajusta el espacio superior si es necesario */
     }
   
