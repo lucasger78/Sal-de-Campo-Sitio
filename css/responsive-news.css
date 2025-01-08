@@ -248,31 +248,38 @@
         max-width: 90% !important;
     }
 }
-/* Ajustes para recetas en pantallas móviles */
 @media (max-width: 768px) {
+    .ingrediente{
+        
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
     .recetas-container {
-      display: flex;
-      flex-direction: column; /* Acomoda las recetas en una sola columna */
-      justify-content: center; /* Centra las recetas verticalmente */
-      align-items: center; /* Centra horizontalmente las imágenes */
-      gap: 20px; /* Espacio entre las imágenes de las recetas */
-      margin: 20px 0; /* Margen superior e inferior */
+      display: flex !important;
+      flex-wrap: wrap !important; /* Permite que los elementos se acomoden en varias filas */
+      justify-content: center !important; /* Centra todo horizontalmente */
+      align-items: center !important; /* Centra verticalmente */
+      gap: 20px !important; /* Espaciado uniforme entre elementos */
+      padding: 10px !important; /* Espaciado interno en la sección */
     }
   
     .recetas-container img {
-      max-width: 90%; /* Ajusta el tamaño de las imágenes para que no se salgan del contenedor */
-      height: auto; /* Mantiene la proporción */
-      border-radius: 10px; /* Agrega bordes redondeados si es necesario */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade un ligero sombreado */
+      max-width: 90% !important; /* Las imágenes ocupan el 90% del ancho disponible */
+      height: auto !important; /* Mantiene proporciones */      
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Sombra para destacar */
     }
   
     .recetas-container .receta-texto {
-      text-align: center; /* Alinea el texto al centro */
-      font-size: 14px; /* Reduce el tamaño del texto para móviles */
-      margin-top: 10px; /* Añade separación entre la imagen y el texto */
-      padding: 0 10px; /* Añade algo de espacio lateral */
+      width: 100% !important; /* El texto ocupa todo el ancho disponible */
+      text-align: center !important; /* Centra el texto */
+      font-size: 14px !important; /* Tamaño adecuado para dispositivos móviles */
+      margin-top: 10px !important; /* Espaciado entre imagen y texto */
+      padding: 0 15px !important; /* Espacio lateral para evitar que el texto quede pegado al borde */
     }
   }
+  
 
   
 /* SECCION HISTORIA, MENU TOGGLE Y TN REDES MAS CENTRADOS */
