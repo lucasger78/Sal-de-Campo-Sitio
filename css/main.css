@@ -60,7 +60,7 @@ h4, h5, h6 {
 }
  
 .clear {
-   *zoom: 1;
+   zoom: 1;
 }
 
 body > section {

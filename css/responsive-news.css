@@ -248,5 +248,72 @@
         max-width: 90% !important;
     }
 }
+/* Ajustes para recetas en pantallas móviles */
+@media (max-width: 768px) {
+    .recetas-container {
+      display: flex;
+      flex-direction: column; /* Acomoda las recetas en una sola columna */
+      justify-content: center; /* Centra las recetas verticalmente */
+      align-items: center; /* Centra horizontalmente las imágenes */
+      gap: 20px; /* Espacio entre las imágenes de las recetas */
+      margin: 20px 0; /* Margen superior e inferior */
+    }
+  
+    .recetas-container img {
+      max-width: 90%; /* Ajusta el tamaño de las imágenes para que no se salgan del contenedor */
+      height: auto; /* Mantiene la proporción */
+      border-radius: 10px; /* Agrega bordes redondeados si es necesario */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade un ligero sombreado */
+    }
+  
+    .recetas-container .receta-texto {
+      text-align: center; /* Alinea el texto al centro */
+      font-size: 14px; /* Reduce el tamaño del texto para móviles */
+      margin-top: 10px; /* Añade separación entre la imagen y el texto */
+      padding: 0 10px; /* Añade algo de espacio lateral */
+    }
+  }
+
+  
+/* SECCION HISTORIA, MENU TOGGLE Y TN REDES MAS CENTRADOS */
+/* Ajustes para pantallas móviles */
+@media (max-width: 768px) {
+    /* Imágenes historia */
+    .mobile-device {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /* Centra ambas imágenes horizontalmente */
+      align-items: center; /* Alinea verticalmente las imágenes */
+      gap: 10px; /* Espacio entre las imágenes */
+    }
+  
+    .mobile-device img {
+      float: none; /* Elimina el float */
+      position: relative; /* Mantiene la posición relativa */
+      max-width: 40%; /* Ajusta el tamaño de las imágenes */
+      height: auto;
+    }
+  
+    /* Menú toggle */
+    .navbar-toggle {
+      margin-right: 15px; /* Mueve el toggle más hacia adentro */
+    }
+  
+    /* Redes sociales */
+    .redes-nav {
+      display: flex;
+      justify-content: center; /* Centra los íconos horizontalmente */
+      align-items: center; /* Centra los íconos verticalmente */
+      gap: 15px; /* Espacio entre los íconos */
+      margin-left: 0; /* Elimina el margen negativo en móviles */
+      margin-top: 20px; /* Ajusta el espacio superior si es necesario */
+    }
+  
+    .redes-nav .icons-nav img {
+      width: 25px; /* Reduce el tamaño de los íconos para móviles */
+      height: 25px;
+    }
+  }
+  
 
 
