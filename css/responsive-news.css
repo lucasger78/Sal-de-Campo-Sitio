@@ -176,195 +176,77 @@
 
 /* PRODUCTOS.CSS */
 
-/* Pantallas grandes (desktop, ≥ 1025px) */
-@media (min-width: 1025px) {
+/* Productos CSS Responsive */
+
+/* Desktop 22" o más */
+@media (min-width: 1600px) {
     .productos-gallery {
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
-    .content-producto {
-        width: 22%; /* Cuatro productos por fila */
-        margin: 10px;
-    }
-
     .img-producto {
-        max-height: 100px;
-    }
-
-    .title-prod {
-        font-size: large;
-    }
-
-    .párrafo-prod {
-        font-size: medium;
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Tablets (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Tablet */
+@media (max-width: 1024px) {
     .productos-gallery {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
-    .content-producto {
-        width: 45%; /* Dos productos por fila */
-        margin: 10px;
-    }
-
     .img-producto {
-        max-height: 80px;
-    }
-
-    .title-prod {
-        font-size: medium;
-    }
-
-    .párrafo-prod {
-        font-size: small;
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Móviles (≤ 767px) */
-@media screen and (min-width: 620px) {
+/* Mobile */
+@media (max-width: 768px) {
     .productos-gallery {
+        display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 10px;
     }
 
-    .content-producto {
-        width: 90%; /* Un producto por fila */
-        margin: 5px 0;
+    .producto {
+        width: 100%;
     }
 
     .img-producto {
-        max-height: 40px;
-    }
-
-    .title-prod {
-        font-size: small;
-    }
-
-    .párrafo-prod {
-        font-size: x-small;
-    }
-}
-
-
-/* RECETAS.CSS */
-
-/* Pantallas grandes (desktop, ≥ 1025px) */
-@media (min-width: 1025px) {
-    .titulo-ideas {
-        font-size: 48px;
-        padding-top: 20px;
-    }
-
-    .container-recetas {
-        gap: 60px;
-    }
-
-    .container-recetas .content {
-        max-width: 700px;
-        font-size: 20px;
-        line-height: 1.8;
-    }
-
-    .content-recetas {
-        height: 90%;
-        width: 40%;
-    }
-
-    .receta-area {
-        max-width: 60%;
-    }
-
-    .icon-detalles {
-        width: 35px;
-        height: 35px;
-    }
-
-    .porcion, .reloj, .dificultad {
-        width: 500px;
-    }
-}
-
-/* Tablets (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .titulo-ideas {
-        font-size: 36px;
-        padding-top: 15px;
-    }
-
-    .container-recetas {
-        gap: 40px;
-    }
-
-    .container-recetas .content {
-        max-width: 600px;
-        font-size: 18px;
-        line-height: 1.6;
-    }
-
-    .content-recetas {
-        height: 80%;
-        width: 50%;
-    }
-
-    .receta-area {
-        max-width: 70%;
-    }
-
-    .icon-detalles {
-        width: 30px;
-        height: 30px;
-    }
-
-    .porcion, .reloj, .dificultad {
-        width: 400px;
-    }
-}
-
-/* Móviles (≤ 767px) */
-@media (max-width: 767px) {
-    .titulo-ideas {
-        font-size: 24px;
-        padding-top: 10px;
-        text-align: center;
-    }
-
-    .container-recetas {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .container-recetas .content {
         max-width: 100%;
-        font-size: 16px;
-        line-height: 1.5;
-        padding: 0 10px;
-    }
-
-    .content-recetas {
         height: auto;
-        width: 90%;
-    }
-
-    .receta-area {
-        max-width: 100%;
-        margin: 10px;
-    }
-
-    .icon-detalles {
-        width: 25px;
-        height: 25px;
-    }
-
-    .porcion, .reloj, .dificultad {
-        width: 100%;
-        margin: 5px 0;
     }
 }
+
+
+
+/* recetas */
+
+
+/* Mobile: Uno debajo del otro */
+@media (max-width: 768px) {
+    .container-recetas {
+        display: flex !important;  /* Forzar flexbox */
+        flex-direction: column !important;  /* Forzar dirección vertical */
+        align-items: center !important;  
+        gap: 10px !important;
+    }
+
+    .col-md-4 {
+        flex: 1 1 100% !important;
+        max-width: 90% !important;
+    }
+
+    .recetas-details {
+        width: 100% !important;
+        max-width: 90% !important;
+    }
+}
+
+
