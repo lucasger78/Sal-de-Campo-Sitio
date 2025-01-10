@@ -192,36 +192,35 @@
     }
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .productos-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .img-producto {
-        max-width: 100%;
-        height: auto;
+/* Media Query para pantallas pequeñas (menos de 1000px) */
+@media screen and (max-width: 1000px) {
+    .content-producto {
+        width: 45%;
     }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    .productos-gallery {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+/* Media Query para móviles (menos de 700px) */
+@media screen and (max-width: 700px) {
+    #img-original {
+        width: 70%;
+    }
+    #img-fina {
+        width: 70%;
+    }
+    #img-ahumada {
+        width: 70%;
+    }
+    #img-pimientas {
+        width: 70%;
+    }
+    #img-suave {
+        width: 70%;
+    }
+    #img-especial {
+        width: 70%;
     }
 
-    .producto {
-        width: 100%;
-    }
-
-    .img-producto {
-        max-width: 100%;
-        height: auto;
-    }
+     
 }
 
 

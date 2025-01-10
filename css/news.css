@@ -20,12 +20,11 @@
 .ico-wts {
     color: white;
     margin-right: 5px;
-    /* transition: all .5s ease; */
+    
 }
 
 .redes-icons {
     display: flex;
-    /* max-height: 1000%; */
     margin-left: 400%;
     margin-top: 20%;
     /* transition: all .5s ease;     */
