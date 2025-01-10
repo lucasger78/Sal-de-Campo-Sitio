@@ -27,14 +27,27 @@
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .history-01 {
+    /* .history-01 {
         max-width: 50%;
     }
 
     .history-02 {
         max-width: 60%;
         margin-bottom: 50px;
+    } */
+
+    #mobile-h {
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    #h-01, #h-02 {
+        position: relative;
+    }
+
+        
 
     .boton {
         margin-top: 10%;
@@ -72,8 +85,7 @@
     }
 
     .redes-nav {
-        gap: 10px;
-        /* flex-direction: column; */
+        gap: 10px;        
         margin-left: 0;
     }
 
@@ -202,22 +214,41 @@
 /* Media Query para móviles (menos de 700px) */
 @media screen and (max-width: 700px) {
     #img-original {
-        width: 70%;
+        width: 100%;
     }
     #img-fina {
-        width: 70%;
+        width: 100%;
     }
     #img-ahumada {
-        width: 70%;
+        width: 100%;
     }
     #img-pimientas {
-        width: 70%;
+        width: 100%;
     }
     #img-suave {
-        width: 70%;
+        width: 100%;
     }
     #img-especial {
-        width: 70%;
+        width: 100%;
+    }
+
+    #contenedor-original {
+        width: 60%;
+    }
+    #contenedor-fina {
+        width: 60%;
+    }
+    #contenedor-ahumada {
+        width: 60%;
+    }
+    #contenedor-pimientas {
+        width: 60%;
+    }
+    #contenedor-suave {
+        width: 60%;
+    }
+    #contenedor-especial {
+        width: 60%;
     }
 
      
