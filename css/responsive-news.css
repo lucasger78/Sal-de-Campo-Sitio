@@ -46,6 +46,28 @@
     #h-01, #h-02 {
         position: relative;
     }
+/* Mobile */
+}   
+@media (max-width: 800px) {
+    /* Estilos aplicados solo en pantallas menores a 880px */
+    #h-02 {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important; /* Control extra */
+        pointer-events: none !important; /* Evita interacción */
+    }
+
+
+    /* Mostrar solo la primera imagen bien centrada */
+    #h-01 {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+
+
+
 
         
 

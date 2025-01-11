@@ -120,3 +120,27 @@ function progress(percent, $element) {
         }, 10)
     })(0,percent);  
 }   
+
+
+// Al cargar la página
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth <= 880) {
+        document.getElementById('h-02').classList.remove('wow');
+    }
+});
+
+// Al redimensionar la pantalla
+window.addEventListener('resize', function () {
+    if (window.innerWidth <= 800) {
+        document.getElementById('h-02').classList.remove('wow');
+    } else {
+        document.getElementById('h-02').classList.add('wow'); // Rehabilita en pantallas grandes
+    }
+});
+
+
+
+new WOW({
+    mobile: false // Desactiva WOW en móviles
+}).init();
+
