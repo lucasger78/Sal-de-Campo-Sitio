@@ -83,6 +83,9 @@
     .redes-nav {
         gap: 15px;
         margin-left: -30px;
+        display: flex;
+        justify-content:start;
+
     }
 
     .whatsapp, .email, .gps {
@@ -108,7 +111,9 @@
 
     .redes-nav {
         gap: 10px;        
-        margin-left: 0;
+        /* margin-left: 0; */
+        display: flex;
+        justify-content:start;
     }
 
     .whatsapp, .email, .gps {
