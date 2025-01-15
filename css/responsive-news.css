@@ -390,7 +390,7 @@
 
   @media screen and (max-width: 768px) {
     #tienda-btn {
-        display: block; /* Mostrar el botón fuera del menú en móvil */
+        display: block !important; /* Mostrar el botón fuera del menú en móvil */
         text-align: center; /* Centrar el botón si es necesario */
         margin: 10px 0; /* Ajustar espaciado */
     }
@@ -400,5 +400,4 @@
     }
 }
   
-
 
