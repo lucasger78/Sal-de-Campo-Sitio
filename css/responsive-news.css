@@ -15,13 +15,11 @@
         width: 25%;
     }
 
-    #redesNav{
-        margin-right: 120px;
-    }
+  
 
     .redes-nav {
         gap: 30px;
-        /* margin-left: -50px; */
+        margin-left: -50px;
     }
 
     .whatsapp, .email, .gps {
@@ -71,7 +69,10 @@
     }
 
 
-
+    #redesNav{
+        /* display: auto; */
+        margin-right: 180px;
+    }
 
         
 
@@ -366,6 +367,9 @@
     .navbar-toggle {
       margin-right: 45px; /* Mueve el toggle más hacia adentro */
     }
+
+    /* Estilo para móviles */
+
   
     /* Redes sociales */
     
@@ -383,6 +387,18 @@
       height: 25px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    #tienda-btn {
+        display: block; /* Mostrar el botón fuera del menú en móvil */
+        text-align: center; /* Centrar el botón si es necesario */
+        margin: 10px 0; /* Ajustar espaciado */
+    }
+
+    .navbar-nav .tienda {
+        display: none; /* Ocultar el botón dentro del menú */
+    }
+}
   
 
 

@@ -73,7 +73,9 @@
     font-weight: 900;
 }
 
-
+#tienda-btn{
+    display: none !important;
+}
 
 /* RESPONSIVE */
 
@@ -222,3 +224,4 @@
     }
 
 }
+
