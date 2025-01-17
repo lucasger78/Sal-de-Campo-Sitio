@@ -71,8 +71,8 @@
 
     #redesNav{
         position: absolute;
-        top: 50%; 
-        right: 200px; /* Ajustado para mayor precisión */
+        top: 40%; 
+        right: 180px; /* Ajustado para mayor precisión */
         transform: translateY(-50%); /* Centra verticalmente los íconos */
         display: flex;
         flex-direction: row; 
@@ -401,8 +401,8 @@
   @media screen and (max-width: 768px) {
     #tienda-btn {
         display:flex !important;  /* Mostrar el botón fuera del menú en móvil */
-        text-align: center; /* Centrar el botón si es necesario */
-        margin-right: 50%;
+        text-align: top; /* Centrar el botón si es necesario */
+        margin-right: 30%;
        
         z-index: 100
     }
