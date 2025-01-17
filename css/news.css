@@ -58,6 +58,11 @@
     box-shadow: 2px 2px 2px rgb(219, 36, 51);
     border-radius: 10px;
 }
+.fb:hover {
+    border: dotted 2px rgb(2, 115, 243);
+    box-shadow: 2px 2px 2px rgb(253, 253, 253);
+    border-radius: 10px;
+}
 
 .wts:hover {
     border: dotted 2px rgb(255, 255, 255);
@@ -116,6 +121,12 @@
     .tk:hover {
         border: dotted 2px rgb(53, 240, 240);
         box-shadow: 2px 2px 2px rgb(219, 36, 51);
+        border-radius: 10px;
+    }
+    
+    .fb:hover {
+        border: dotted 2px rgb(2, 115, 243);
+        box-shadow: 2px 2px 2px rgb(253, 253, 253);
         border-radius: 10px;
     }
 
@@ -189,6 +200,12 @@
     .tk:hover {
         border: dotted 2px rgb(53, 240, 240);
         box-shadow: 2px 2px 2px rgb(219, 36, 51);
+        border-radius: 10px;
+    }
+
+    .fb:hover {
+        border: dotted 2px rgb(2, 115, 243);
+        box-shadow: 2px 2px 2px rgb(253, 253, 253);
         border-radius: 10px;
     }
 

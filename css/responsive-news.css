@@ -390,9 +390,10 @@
 
   @media screen and (max-width: 768px) {
     #tienda-btn {
-        display: block !important; /* Mostrar el botón fuera del menú en móvil */
+        display:flex !important;  /* Mostrar el botón fuera del menú en móvil */
         text-align: center; /* Centrar el botón si es necesario */
-        margin: 10px 0; /* Ajustar espaciado */
+        /*margin: 10px 0;  Ajustar espaciado */
+        z-index: 100;
     }
 
     .navbar-nav .tienda {

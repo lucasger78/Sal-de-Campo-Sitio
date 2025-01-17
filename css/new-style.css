@@ -92,6 +92,12 @@
     border-radius: 5px;
 }
 
+.fb:hover {
+    border: dotted 2px rgb(2, 115, 243);
+    box-shadow: 2px 2px 2px rgb(253, 253, 253);
+    border-radius: 5px;
+}
+
 .wts:hover {
     border: dotted 2px rgb(255, 255, 255);
     box-shadow: 2px 2px 2px rgb(20, 196, 122);
