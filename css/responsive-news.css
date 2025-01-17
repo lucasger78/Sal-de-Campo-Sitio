@@ -72,7 +72,7 @@
     #redesNav{
         position: absolute;
         top: 50%; 
-        right: 100px; /* Ajustado para mayor precisión */
+        right: 200px; /* Ajustado para mayor precisión */
         transform: translateY(-50%); /* Centra verticalmente los íconos */
         display: flex;
         flex-direction: row; 
