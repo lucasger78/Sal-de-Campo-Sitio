@@ -70,9 +70,18 @@
 
 
     #redesNav{
+        position: absolute;
+        top: 50%; 
+        right: 100px; /* Ajustado para mayor precisión */
+        transform: translateY(-50%); /* Centra verticalmente los íconos */
+        display: flex;
+        flex-direction: row; 
+        gap: 10px;
+        align-items: start;
+        z-index: 1000; 
         /* display: auto; */
-        /* margin-right: 90%; */
-        margin-left: 10px !important;
+        /* margin-right: 50%; */
+       
     }
 
         
