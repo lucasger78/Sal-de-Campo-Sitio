@@ -392,8 +392,9 @@
     #tienda-btn {
         display:flex !important;  /* Mostrar el botón fuera del menú en móvil */
         text-align: center; /* Centrar el botón si es necesario */
-        /*margin: 10px 0;  Ajustar espaciado */
-        z-index: 100;
+        margin-right: 15%;
+       
+        z-index: 100
     }
 
     .navbar-nav .tienda {
