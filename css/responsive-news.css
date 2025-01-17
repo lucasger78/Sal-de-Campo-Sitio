@@ -71,7 +71,8 @@
 
     #redesNav{
         /* display: auto; */
-        margin-right: 180px;
+        /* margin-right: 90%; */
+        margin-left: 10px !important;
     }
 
         
@@ -365,7 +366,7 @@
   
     /* Menú toggle */
     .navbar-toggle {
-      margin-right: 45px; /* Mueve el toggle más hacia adentro */
+      margin-right: 55px; /* Mueve el toggle más hacia adentro */
     }
 
     /* Estilo para móviles */
@@ -392,7 +393,7 @@
     #tienda-btn {
         display:flex !important;  /* Mostrar el botón fuera del menú en móvil */
         text-align: center; /* Centrar el botón si es necesario */
-        margin-right: 15%;
+        margin-right: 50%;
        
         z-index: 100
     }
