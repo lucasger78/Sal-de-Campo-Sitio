@@ -29,6 +29,9 @@
         font-size: 12px;
     }
 
+
+
+
     /* Tamaño de iconos reducido para mobile */
     .icons-nav img {
         width: 20px;
@@ -448,13 +451,22 @@
   }
 
   @media screen and (max-width: 768px) {
+    #tienda-btn button {
+        background-color: rgb(248, 3, 3);
+        border-color: rgb(199, 98, 3);
+        box-shadow: 2px 2px 5px rgb(36, 115, 219);
+    }
+
     #tienda-btn {
-        position: absolute;
-        /*top: 10px;  Ajusta la distancia desde la parte superior */
-        right: -30px; /* Ajusta la distancia desde la derecha para acercarlo a las redes */
+       
+        position: fixed;        
+        right: 40px;  
+        top: 95px;
+        display: flex;
         padding: 5px 10px;
         font-size: 14px;
-        z-index: 100; /* Asegura que esté por encima de otros elementos */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        
     }
     
 
