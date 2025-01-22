@@ -449,12 +449,14 @@
 
   @media screen and (max-width: 768px) {
     #tienda-btn {
-        display:flex !important;  /* Mostrar el botón fuera del menú en móvil */
-        text-align: top; /* Centrar el botón si es necesario */
-        margin-right: 30%;
-       
-        z-index: 100
+        position: absolute;
+        /*top: 10px;  Ajusta la distancia desde la parte superior */
+        right: -30px; /* Ajusta la distancia desde la derecha para acercarlo a las redes */
+        padding: 5px 10px;
+        font-size: 14px;
+        z-index: 100; /* Asegura que esté por encima de otros elementos */
     }
+    
 
     .navbar-nav .tienda {
         display: none; /* Ocultar el botón dentro del menú */
