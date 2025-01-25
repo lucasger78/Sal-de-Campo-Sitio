@@ -25,6 +25,7 @@
 
 .párrafo-prod {
     text-align:initial;
+    font-weight: 400;
     margin: 10px;
     padding-top: 0 8px;
     font-size: small;
@@ -133,6 +134,31 @@
     color: rgb(199, 98, 3);
 }
 
+#original-info{
+    color:rgb(248, 3, 3);
+}
+.masInfo-original{
+    color:rgb(248, 3, 3) !important;
+}
+
+#fina-info{
+    color: rgb(199, 98, 3);
+}
+
+
+#ahumada-info{
+    color:rgb(10, 10, 10);
+}
+#pimientas-info{
+    color:rgb(10, 77, 165);
+}
+
+#suave-info{
+    color: rgb(36, 168, 3)
+}
+#especial-info{
+    color: rgb(199, 98, 3);
+}
 
 
 .img-producto{
