@@ -197,6 +197,10 @@
         flex-direction: column;
         gap: 20px;
     }
+    .img-producto {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -224,6 +228,10 @@
         font-size: 18px;
         padding: 10px 20px;
     }
+    .img-producto {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* Tablets */
@@ -247,6 +255,10 @@
     #btn-wsp {
         font-size: 16px;
         padding: 8px 15px;
+    }
+    .img-producto {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -277,6 +289,10 @@
         text-align: center;
         width: 100%;
     }
+    .img-producto {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -302,6 +318,10 @@
 @media screen and (max-width: 1000px) {
     .content-producto {
         width: 45%;
+    }
+    .img-producto {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -343,6 +363,11 @@
     }
     #contenedor-especial {
         width: 60%;
+    }
+
+    .img-producto {
+        max-width: 100%;
+        height: auto;
     }
 
      
