@@ -135,31 +135,91 @@
 }
 
 #original-info{
-    color:rgb(248, 3, 3);
+    color:rgb(255, 255, 255);
 }
 
 #fina-info{
-    color: rgb(199, 98, 3);
+    color: rgb(255, 255, 255);
 }
 
 #ahumada-info{
-    color:rgb(10, 10, 10);
+    color:rgb(255, 255, 255);
 }
 #pimientas-info{
-    color:rgb(10, 77, 165);
+    color:rgb(255, 255, 255);
 }
 
 #suave-info{
-    color: rgb(36, 168, 3)
+    color: rgb(255, 255, 255)
 }
 #especial-info{
-    color: rgb(199, 98, 3);
+    color: rgb(255, 255, 255);
 }
 
+
+.btn-danger:hover {
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(248, 3, 3);
+    box-shadow: 2px 2px 2px rgb(248, 3, 3);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.btn-warning:hover {
+    border-color: rgb(248, 3, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(36, 115, 219);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.btn-dark{
+    z-index: 100;
+    background-color: rgb(10, 10, 10);
+
+}
+
+.btn-dark:hover {
+    border-color: rgb(10, 10, 10);
+    border: dotted 2px rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(10, 10, 10);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.btn-primary:hover {
+    border-color: rgb(10, 77, 165);
+    border: dotted 2px rgb(10, 77, 165);
+    box-shadow: 2px 2px 2px rgb(10, 77, 165);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.btn-success:hover {
+    border-color: rgb(36, 168, 3);
+    border: dotted 2px rgb(36, 168, 3);
+    box-shadow: 2px 2px 2px rgb(36, 168, 3);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+.special:hover {
+    border-color: rgb(199, 98, 3);
+    border: dotted 2px rgb(199, 98, 3);
+    box-shadow: 2px 2px 2px rgb(199, 98, 3);
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
 
 .img-producto{
     width: 100%;
-    max-height: 350px;
+    height: auto;
     text-align: left;
     margin: 0 auto;
     display: block;
