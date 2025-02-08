@@ -251,7 +251,15 @@ figure, p{
   /* margin-left: 80%; */
 }
 
-
+.certif{
+  height: 20px;
+  width: auto;
+  position: absolute;
+  bottom: 50px;
+  justify-items: center; 
+  right: 50%; 
+  z-index: 10; 
+}
 
 }
 
