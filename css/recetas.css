@@ -200,6 +200,12 @@
     padding: 0;
 }
 
+.opcional{
+    color:rgb(90, 90, 90);
+    font-weight: 700;
+    display: block;
+}
+
 .content-recetas{
     height: 80%;
     width: 30%;
