@@ -238,6 +238,22 @@
     filter: grayscale(0%);
 }
 
+/* ver mas productos */
+.verMas{
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.p-def{
+    display: block;
+    margin-bottom: 25px;
+}
+
+.p-def-esp{
+    display: block;
+    margin-bottom: 40px;
+}
 
 
 /* Estilos para pantallas más pequeñas (menos de 768px) */
