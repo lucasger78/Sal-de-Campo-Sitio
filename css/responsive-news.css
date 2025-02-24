@@ -499,5 +499,33 @@
         display: none; /* Ocultar el botón dentro del menú */
     }
 }
-  
+
+
+
+
+
+
+@media (max-width: 1024px) { /* Tablets y móviles */
+    #home-carousel .carousel-inner .item {
+        /* background-image: url('img/slider/bg1q.jpg'); */
+        background-size: cover; /* Para que la imagen se ajuste dentro del contenedor */
+        background-position: center center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+    }
+
+    .carousel-caption > div {
+        padding: 50px 25px; /* Reduce el padding para mejor adaptación */
+        top: 20%; /* Ajusta la posición vertical */
+        width: 90%; /* Reduce el ancho del texto */
+    }
+
+    #home-carousel .carousel-inner h2 {
+        font-size: 20px; /* Reduce el tamaño del texto */
+        line-height: 30px;
+    }
+
+    .history-p{
+        padding: 0 30px;
+    }
+}
 
