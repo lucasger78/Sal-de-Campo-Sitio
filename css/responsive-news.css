@@ -210,8 +210,10 @@
     } */
 
     .contact-items {
-        width: 90%; 
-        display: flex;
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: auto;
         flex-direction: column;
         align-items: center;
         /* justify-content: center;  */
@@ -463,7 +465,10 @@
     }
 
     .img-responsive{
-        margin-left: 8%;
+        width: 90%;
+        display: block;
+        margin: auto;
+        /* margin-left: 8%; */
     }
 }
 
@@ -615,6 +620,8 @@
         max-width: 400px;
         margin-bottom: 10px;
     }
+
+    
 
    
 }
