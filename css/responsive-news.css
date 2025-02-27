@@ -381,53 +381,64 @@
 /* Mobile: Uno debajo del otro */
 @media (max-width: 768px) {
     .container-recetas {
-        display: flex !important;  /* Forzar flexbox */
-        flex-direction: column !important;  /* Forzar dirección vertical */
-        align-items: center !important;  
-        gap: 10px !important;
-    }
-
-    .col-md-4 {
-        flex: 1 1 100% !important;
-        max-width: 90% !important;
-    }
-
-    .recetas-details {
-        width: 100% !important;
-        max-width: 90% !important;
-    }
-}
-@media (max-width: 768px) {
-    .ingrediente{
-        
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         gap: 10px !important;
+        max-width: 95% !important; /* Hace que ocupe más ancho */
+        margin: auto !important;
     }
+
+    .col-md-4,
+    .recetas-details {
+        flex: 1 1 100% !important;
+        max-width: 95% !important; /* Aumenta el ancho para que no quede tan apretado */
+    }
+
+    .ingrediente {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: 95% !important; /* Más ancho */
+    }
+
     .recetas-container {
-      display: flex !important;
-      flex-wrap: wrap !important; /* Permite que los elementos se acomoden en varias filas */
-      justify-content: center !important; /* Centra todo horizontalmente */
-      align-items: center !important; /* Centra verticalmente */
-      gap: 20px !important; /* Espaciado uniforme entre elementos */
-      padding: 10px !important; /* Espaciado interno en la sección */
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 10px !important;
+        max-width: 95% !important; /* Más espacio para el texto */
     }
-  
+
     .recetas-container img {
-      max-width: 90% !important; /* Las imágenes ocupan el 90% del ancho disponible */
-      height: auto !important; /* Mantiene proporciones */      
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Sombra para destacar */
+        max-width: 100% !important; /* Imagen más grande */
+        height: auto !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
     }
-  
+
     .recetas-container .receta-texto {
-      width: 100% !important; /* El texto ocupa todo el ancho disponible */
-      text-align: center !important; /* Centra el texto */
-      font-size: 14px !important; /* Tamaño adecuado para dispositivos móviles */
-      margin-top: 10px !important; /* Espaciado entre imagen y texto */
-      padding: 0 15px !important; /* Espacio lateral para evitar que el texto quede pegado al borde */
+        width: 100% !important;
+        text-align: left !important; /* Alinea a la izquierda como en la referencia */
+        font-size: 13px !important; /* Fuente más pequeña */
+        line-height: 1.6 !important; /* Más espaciado entre líneas para mejor lectura */
+        padding: 0 20px !important; /* Más margen lateral */
     }
-  }
+
+    .content-recetas h2, 
+    .content-recetas h4, 
+    .content-recetas ul, 
+    .content-recetas ol {
+        width: 100%;
+        /* margin: 0 auto; */
+        text-align: left !important; /* Para que los ingredientes no queden demasiado centrados */
+        font-size: 14px !important; /* Un tamaño más chico para el contenido */
+        line-height: 1.6 !important;
+    }
+}
+
   
 
   
@@ -528,4 +539,49 @@
         padding: 0 30px;
     }
 }
+
+@media (max-width: 768px) { /* Para móviles y tablets */
+    .container-recetas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 400px; /* Mantiene proporción */
+        margin-bottom: 10px;
+    }
+
+    .content-recetas {
+        width: 100%;
+        max-width: 450px; /* Más ancho para que no se vea tan apretado */
+        text-align: center;
+    }
+
+    .content-recetas h2, 
+    .content-recetas h4, 
+    .content-recetas ul, 
+    .content-recetas ol {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: left; /* Evita que los ingredientes queden demasiado centrados */
+    }
+
+    .detalles-items {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 450px; /* Mismo ancho que el texto */
+    }
+
+    .recetas-details {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+}
+
 
