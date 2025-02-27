@@ -50,9 +50,25 @@
 		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<div id="tienda-btn" style="display: none;">
+
+         <!-- ========== WHATSAPP BUTTON ========== -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://walink.co/8f1dc3" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        
+
+        <div class="fixed-action-btn">
+            <a  target="_blank" class="btn btn-floating btn-lg"></a>           
+        </div> 
+
+        <!-- ========== END WHATSAPP BUTTON ========== -->
+
+
+
+
+		<!-- <div id="tienda-btn" style="display: none;">
             <button class="boton-tienda btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo.png" alt="carrito Logo" class="carro">Tienda</a></button>
-        </div>
+        </div> -->
     </head>
 	
     <body>
@@ -91,7 +107,7 @@
                         <a class="icons-nav" href="https://www.tiktok.com/@saldecampo?lang-es" target="_blank">
                             <img class="tk" src="img/icons/icons-tik-tok.png" alt="tiktok">
                         </a>
-                        <a class="icons-nav" href="https://https://www.facebook.com/saldecampo/" target="_blank">
+                        <a class="icons-nav" href="https://www.facebook.com/saldecampo/" target="_blank">
                             <img class="fb" src="img/icons/icons-facebook.png" alt="tiktok">
                         </a>
                         <a class="icons-nav" href="https://walink.co/8f1dc3" target="_blank">
@@ -111,7 +127,7 @@
                             <li><a href="#producto">Productos</a></li>
                             <li><a href="#idea">Ideas y Recetas</a></li>                            
                             <li><a href="#contact">Contacto</a></li>
-                            <li class="tienda"><button class="boton btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo.png" alt="carrito Logo" class="carro">Tienda</a></button></li>
+                            <!-- <li class="tienda"><button class="boton btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo.png" alt="carrito Logo" class="carro">Tienda</a></button></li> -->
                         </ul>                       
                     </nav>                   
                     <!-- /main nav -->
@@ -202,27 +218,28 @@
                     </div>
                 </div>             
             </div> <!-- end .container -->
-        </section>
-        <!-- <section id="about">
-            <div class="container"> -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-center wow fadeInDown">
-                            <h3 class="history-title">Un poco de historia...</h3>
-                        </div> 
-                        <div class="mobile-device history" id="mobile-h">
-                            <img data-wow-delay="0.2s" class="img-responsive black  wow fadeInLeftBig history-01" id="h-01" src="img/icons/history-01.png" alt="historia">                            
+            <div class="mobile-device history" id="mobile-h">
+                <img data-wow-delay="0.2s" class="img-responsive black  wow fadeInLeftBig history-01" id="h-01" src="img/icons/history-01.png" alt="historia">                            
+            </div>
+               
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                           
+                            <div class="section-title text-center wow fadeInDown">
+                                <p id="history-p"> A principios de 1900, las familias que vivían en el campo usaban la mezcla sal, hierbas y especias que ponemos en nuestros productos. Hoy, esas familias están en los pueblos y ciudades del interior, pero quedan muy pocas en las zonas rurales.
+                                Desde Sal de Campo, buscamos trasladar esos usos y costumbres de la pampa húmeda, para qué puedas vivir las mismas experiencias en el día a día a través de los sabores de un simple plato de comida, dando origen a nuestro nombre y slogan.   <br><br>
+                                <span class="nameSlogan">Sal de Campo.  Los sabores del campo, en tu cocina de todos los días…</span>
+                                </p> 
+                            </div> 
                         </div>
-                        <div class="section-title text-center wow fadeInDown">
-                            <p id="history-p">A principios de 1900, las familias que vivían en el campo usaban la mezcla sal, hierbas y especias que ponemos en nuestros productos. Hoy, esas familias están en los pueblos y ciudades del interior, pero quedan muy pocas en las zonas rurales.
-                            Desde Sal de Campo, buscamos trasladar esos usos y costumbres de la pampa húmeda, para qué puedas vivir las mismas experiencias en el día a día a través de los sabores de un simple plato de comida, dando origen a nuestro nombre y slogan.<br><br>
-                            <span class="nameSlogan">Sal de Campo.  Los sabores del campo, en tu cocina de todos los días…</span>
-                            </p> 
-                        </div> 
-                    </div>
-                </div><!-- end .row -->
+                    </div>             
+                </div> <!-- end .container -->
+            </section>
+        </section>
             
-            <!-- end .container --> 
+        <!-- end .container --> 
         <!--  
         End #about
         ========================== -->
@@ -272,7 +289,7 @@
                             <img class="img-producto" id="img-fina" src="img/productos/fina.jpg" alt="galeria-productos">
                             <h4 class="title-prod" id="fina-span">Fina</h4>
                             <h5 class="sub-title-prod">Mezcla de Sal Fina con Hierbas y Especias</h5>
-                            <p class="párrafo-prod p-def">La misma receta de Sal de Campo Original, pero elaborada sal fina, hierbas y especias. Pensada para las comidas de todos los días.</p>
+                            <p class="párrafo-prod p-def">La misma receta de Sal de Campo Original, pero elaborada con sal fina, hierbas y especias. Pensada para las comidas de todos los días.</p>
                             <p class="párrafo-prod">
                                 Ingredientes:
                                 <span id="ingredientes-preview-fina" class="text-hidden">...</span>
@@ -287,7 +304,7 @@
                             <img class="img-producto" id="img-ahumada" src="img/productos/ahumada.jpg" alt="galeria-productos">
                             <h4 class="title-prod" id="ahumada-span">Ahumada</h4>
                             <h5 class="sub-title-prod">Mezcla de Sal Entrefina Ahumada con Hierbas y Especias</h5>
-                            <p class="párrafo-prod p-def">Con la mezcla de sal hierbas y especias de siempre y un toque de ahumado para salir de la rutina</p><br>
+                            <p class="párrafo-prod p-def">Con la mezcla de sal, hierbas y especias de siempre y un toque de ahumado para salir de la rutina</p><br>
                             <p class="párrafo-prod">
                                 Ingredientes:
                                 <span id="ingredientes-preview-ahumada" class="text-hidden">...</span>
@@ -316,7 +333,7 @@
                         <div class="content-producto suave" id="contenedor-suave">
                             <img class="img-producto" id="img-suave" src="img/productos/suave.jpg" alt="galeria-productos">
                             <h4 class="title-prod" id="suave-span">Suave</h4>
-                            <h5 class="sub-title-prod">Mezcla De Sal Fina Reducida En Sodio  (-66%), Con Hierbas Y Especias</h5>
+                            <h5 class="sub-title-prod">Mezcla de Sal Fina reducida en Sodio  (-66%), con Hierbas y Especias</h5>
                             <p class="párrafo-prod p-def">Para aquellas personas que desean cuidarse en el uso de la sal, sin perder los aromas y sabores del campo.</p><br>
                             <p class="párrafo-prod">
                                 Ingredientes: 
@@ -563,7 +580,7 @@
                             <a class="icons-nav" href="https://www.tiktok.com/@saldecampo?lang-es" target="_blank">
                                 <img class="tk" src="img/icons/icons-tik-tok.png" alt="tiktok">
                             </a>
-                            <a class="icons-nav" href="https://https://www.facebook.com/saldecampo/" target="_blank">
+                            <a class="icons-nav" href="https://www.facebook.com/saldecampo/" target="_blank">
                                 <img class="fb" src="img/icons/icons-facebook.png" alt="tiktok">
                             </a>
                             <a class="icons-nav" href="https://walink.co/8f1dc3" target="_blank">
