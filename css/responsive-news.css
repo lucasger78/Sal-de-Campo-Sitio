@@ -8,7 +8,7 @@
     #redesNav {
         position: absolute;
         top: 10px; /* Ajustado más arriba para mobile */
-        right: 10px; /* Más cercano al borde */
+        right: 30px; /* Más cercano al borde */
         display: flex;
         flex-direction: row;
         gap: 8px;
