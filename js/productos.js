@@ -45,3 +45,11 @@ document.getElementById('ver-mas-especial').addEventListener('click', function(e
     this.style.display = 'none'; 
 });
 
+// ver más marina
+document.getElementById('ver-mas-marina').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('ingredientes-preview-marina').style.display = 'none'; 
+    document.getElementById('ingredientes-completos-marina').style.display = 'inline';
+    this.style.display = 'none'; 
+});
+

@@ -38,7 +38,7 @@
     width: 100%;
     justify-content: center;    
     /* align-items: start; */
-    margin: 10px;
+    margin-top: 40px;
 }
 
 .content-producto {
@@ -157,7 +157,35 @@
     color: rgb(255, 255, 255);
 }
 
+#marina-info{
+    color: rgb(255, 255, 255);
+}
 
+.content-producto.marina:hover {
+    border-color: #50988d;
+    border: dotted 2px #50988d;
+    box-shadow: 2px 2px 2px #50988d;
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+
+#marina-span{
+    color: #50988d;
+}
+
+.marina:hover {
+    border-color: #50988d;
+    border: dotted 2px #50988d;
+    box-shadow: 2px 2px 2px #50988d;
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), */
+    /* 0 3px 6px rgba(0, 0, 0, 0.23); */
+    transform: translate(0px, -8px);
+}
+.p-def-mar-esp{
+    display: block;
+    margin-bottom: 180px !important;
+}
 .btn-danger:hover {
     border-color: rgb(248, 3, 3);
     border: dotted 2px rgb(248, 3, 3);
