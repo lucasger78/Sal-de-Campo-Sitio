@@ -163,7 +163,7 @@
     width: auto;
     position: absolute;
     bottom: 50px; 
-    right: 50px; 
+    left: 50px; 
     z-index: 10; 
 }
 
