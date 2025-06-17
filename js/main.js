@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) {
         document.querySelectorAll(".carousel-inner .item").forEach((item, index) => {
             const mobileImages = [
+                "img/slider/bg0m.jpg", // Imagen para el primer slide en móvil
                 "img/slider/bg1m.jpg", // Imagen para el primer slide en móvil
                 "img/slider/bg2m.jpg", // Imagen para el segundo slide en móvil
                 "img/slider/bg3m.jpg"  // Imagen para el tercer slide en móvil
