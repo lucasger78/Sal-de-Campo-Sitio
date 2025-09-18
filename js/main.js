@@ -11,15 +11,30 @@ $(function(){
     /*  Menu item highlighting
     /* ========================================================================= */
 
+    // jQuery(window).scroll(function () {
+    //     if (jQuery(window).scrollTop() > 100) {
+    //         jQuery("#navigation").css("background-color","rgba(248, 3, 3, 0.8)");
+    //         jQuery("#navigation").addClass("animated-nav");
+    //     } else {
+    //         jQuery("#navigation").css("background-color","transparent");
+    //         jQuery("#navigation").removeClass("animated-nav");
+    //     }
+    // });
+
     jQuery(window).scroll(function () {
-        if (jQuery(window).scrollTop() > 400) {
-            jQuery("#navigation").css("background-color","rgba(248, 3, 3, 0.8)");
-            jQuery("#navigation").addClass("animated-nav");
-        } else {
-            jQuery("#navigation").css("background-color","transparent");
-            jQuery("#navigation").removeClass("animated-nav");
-        }
-    });
+    if (jQuery(window).scrollTop() > 50) { // a partir de 50px de scroll
+        jQuery("#navigation").css("background-color","rgba(248, 3, 3, 0.8)");
+    } else {
+        jQuery("#navigation").css("background-color","transparent");
+    }
+   });
+
+//    #navigation {
+
+//     transition: background-color; 0.3s ease;
+// };
+
+
 
     $('#nav').onePageNav({
         filter: ':not(.external)',
