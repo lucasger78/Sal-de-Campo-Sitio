@@ -1018,15 +1018,15 @@ figcaption.mask span {
 /* --- Solo para mobile --- */
 @media (max-width: 991px) {
    .navbar-nav .tienda {
-    width: 100%;            /* que ocupe como los otros items */
-    margin: 0;              /* sin margen adicional */
-    text-align: left;       /* alineado a la izquierda */
+    width: 100% !important;            /* que ocupe como los otros items */
+    margin: 0 !important;              /* sin margen adicional */
+    text-align: left !important;       /* alineado a la izquierda */
   }
 
   .navbar-nav .tienda .btn-tienda {
-    display: inline-flex;   /* mantenemos tu estilo */
-    justify-content: flex-start; /* icono + texto hacia la izquierda */
-    margin: 5px 15px;       /* mismo padding lateral que los otros ítems */
+    display: inline-flex !important;   /* mantenemos tu estilo */
+    justify-content: flex-start !important; /* icono + texto hacia la izquierda */
+    margin: 5px 15px !important;       /* mismo padding lateral que los otros ítems */
   }
 }
 
