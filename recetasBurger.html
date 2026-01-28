@@ -70,6 +70,11 @@
 		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+         <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 
 		<!-- <div id="tienda-btn" style="display: none;">
@@ -90,11 +95,10 @@
     </head>
 	
     <body>
-
         <!--
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top">
+        <header  class="navbar-fixed-top cabecera-nav">
             <div class="container">
 
                 <div class="navbar-header">
@@ -103,64 +107,88 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                         
                     </button>
                     <!-- /responsive nav button -->
                      
 
                     <!-- logo -->
                     <h1 class="navbar-brand">
-                        <a href="index.html#home">
+                        <a href="#home">
                             <img src="img/logo-SC.png" alt="Sal de Campo Logo" class="logo-nav">
                         </a>                        
                     </h1>
                     
                     <!-- /logo -->
-                    
-                      <!-- Social Icons -->
-                      <div class="redes-nav" id="redesNav">
+                    <!-- Social Icons -->
+                    <div class="redes-nav" id="redesNav">
                         
                         <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
-                            <img class="ig" src="img/icons/icons-instagram-recetas.png" alt="instagram">
+                            <img class="ig" src="img/icons/icons-instagram.png" alt="instagram">
                         </a>
                         <a class="icons-nav" href="https://www.tiktok.com/@saldecampo?lang-es" target="_blank">
-                            <img class="tk" src="img/icons/icons-tik-tok-recetas.png" alt="tiktok">
+                            <img class="tk" src="img/icons/icons-tik-tok.png" alt="tiktok">
                         </a>
                         <a class="icons-nav" href="https://www.facebook.com/saldecampo/" target="_blank">
-                            <img class="fb" src="img/icons/icons-facebook-recetas.png" alt="facebook">
+                            <img class="fb" src="img/icons/icons-facebook.png" alt="tiktok">
                         </a>
-                        <a class="icons-nav" href="https://walink.co/bd22ab" target="_blank">
-                            <img class="wts" src="img/icons/icons-whatsapp-recetas.png" alt="whatsapp">
+                        <a class="icons-nav" href="https://walink.co/8f1dc3" target="_blank">
+                            <img class="wts" src="img/icons/icons-whatsapp.png" alt="whatsapp">
                         </a>
                         
                     </div>
-            <!-- /Social Icons -->
-
+                   <!-- /Social Icons -->            
 
                     </div>
-
+                    
                     <!-- main nav -->
-                    <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
+                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="index.html#home" id="nav-text">Inicio</a></li>
-                            <li><a href="index.html#about" id="nav-text">Nosotros</a></li>
-                            <li><a href="index.html#producto" id="nav-text">Productos</a></li>
-                            <li><a href="index.html#idea" id="nav-text">Ideas y Recetas</a></li>                            
-                            <li><a href="index.html#contact" id="nav-text">Contacto</a></li>
-                            <li class="tienda"><button class="boton btn btn-danger"><a href="https://saldecampo.store/" class="text-btn" target="_blank"><img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">Tienda</a></button></li>
-                        </ul>
-                        
-                    </nav>
+                            <li><a href="index.html#home" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="index.html#about" data-section="nav" data-value="nosotros">Nosotros</a></li>
+                            <li><a href="index.html#producto" data-section="nav" data-value="productos">Productos</a></li>
+                            <li class="current"><a href="index.html#idea" data-section="nav" data-value="ideas">Ideas y Recetas</a></li>                            
+                            <li><a href="index.html#contact" data-section="nav" data-value="contacto">Contacto</a></li>
+                             <li class="tienda">
+                            <a href="https://saldecampo.store/" target="_blank" class="btn-tienda">
+                                <img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">
+                                <span data-section="nav" data-value="tienda">Tienda</span>
+                            </a>
+                            </li>
+                        </ul>                       
+                    </nav>                     
                     <!-- /main nav -->
-                </div>
 
+                     <!-- Flags -->
+
+                        <div id="flags" class="flags flags_img">
+                            <div class="flags_icon">
+                                <i class="fas fa-language icons-translate" ></i>
+                                 <!-- <span class="material-icons icons-translate">translate</span> -->
+                            </div>                            
+                            <div class="flags_items flags-ar" data-language="es">
+                                <!-- <img src="img/icons/ar.svg" alt="ar"/> -->
+                                 <h5 style="color: whitesmoke;" class="avb-lenguage">es</h5>
+                            </div>
+                            <div class="flags_items flags-gb" data-language="en">
+                                <!-- <img src="img/icons/gb.svg" alt="en"/> -->
+                                  <h5 style="color: whitesmoke;" class="avb-lenguage">eng  </h5>
+                            </div>
+                            <div class="flags_items flags-br" data-language="por">
+                                <!-- <img src="img/icons/br.svg" alt="br"/> -->
+                                  <h5 style="color: whitesmoke;" class="avb-lenguage">por</h5>
+                            </div>
+                        </div>
+
+                        
+                        <!-- End Flags -->
+                    
+                </div> 
             </div>
         </header>
         <!--
         End Fixed Navigation
         ==================================== -->
-
-
         <!--
         Home Slider
         ==================================== -->
@@ -169,21 +197,21 @@
                     <!-- <div class="recetas-bg" style="background-image: url('img/slider/bg1a.jpg')" >  -->
                         <div class="receta-area">
                             <div class="container">
-                                <h1 class="titulo-ideas">Ideas & Recetas</h1>
+                                <h1 class="titulo-ideas" data-section="receta-burger" data-value="titulo-principal">Ideas & Recetas</h1>
                                 
                                 <div class="container-recetas">
                                     <div class="col-md-4 col-sm-3 wow fadeInRight detalles-items" id="tips">
                                         <div class="recetas-details reloj">
-                                            <br><span class="text-detail">Tiempo de Cocción <img class="icon-detalles" src="img/icons/time-icon.png" alt="reloj"></span>
-                                            <p class="text-detail">50 min</p><br> 
+                                            <br><span class="text-detail"><span data-section="receta-burger" data-value="tiempo-label">Tiempo de Cocción</span> <img class="icon-detalles" src="img/icons/time-icon.png" alt="reloj"></span>
+                                            <p class="text-detail" data-section="receta-burger" data-value="tiempo-valor">50 min</p><br> 
                                         </div>
                                         <div class="recetas-details porcion">
-                                            <br><span class="text-detail">Porciones <img class="icon-detalles" src="img/icons/porcion-icon.png" alt="reloj"></span>
-                                            <p class="text-detail">Rinde 6 porciones</p><br> 
+                                            <br><span class="text-detail"><span data-section="receta-burger" data-value="porciones-label">Porciones</span> <img class="icon-detalles" src="img/icons/porcion-icon.png" alt="reloj"></span>
+                                            <p class="text-detail" data-section="receta-burger" data-value="porciones-valor">Rinde 6 porciones</p><br> 
                                         </div>
                                         <div class="recetas-details dificultad">
-                                            <br><span class="text-detail">Dificultad <img class="icon-detalles" src="img/icons/dificultad-icon.png" alt="reloj"></span>
-                                            <p class="text-detail">Media</p><br> 
+                                            <br><span class="text-detail"><span data-section="receta-burger" data-value="dificultad-label">Dificultad</span> <img class="icon-detalles" src="img/icons/dificultad-icon.png" alt="reloj"></span>
+                                            <p class="text-detail" data-section="receta-burger" data-value="dificultad-valor">Media</p><br> 
                                         </div>
                                       
                 
@@ -193,27 +221,27 @@
                                         <img src="img/recetas/original-1.jpg" alt="receta bife">
                                     </div>
                                     <div class="content content-recetas">
-                                        <h2>Hamburguesas Caseras</h2>
-                                        <h4>Ingredientes:</h4>
+                                        <h2 data-section="receta-burger" data-value="titulo-receta">Hamburguesas Caseras</h2>
+                                        <h4 data-section="receta-burger" data-value="ingredientes-titulo">Ingredientes:</h4>
                                         <ul id="ingredientes-responsive">
-                                            <li class="ingrediente">500 gr carne molida</li>
-                                            <li class="ingrediente">4 cucharadas de aceite</li>
-                                            <li class="ingrediente">1 cebolla chica picada en cubos pequeños</li>
-                                            <li class="ingrediente">Sal de Campo Original a gusto</li>
-                                            <li class="ingrediente">2 cucharaditas de mostaza</li>
-                                            <li class="ingrediente">1 huevo</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="ingrediente-1">500 gr carne molida</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="ingrediente-2">4 cucharadas de aceite</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="ingrediente-3">1 cebolla chica picada en cubos pequeños</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="ingrediente-4">Sal de Campo Original a gusto</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="ingrediente-5">2 cucharaditas de mostaza</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="ingrediente-6">1 huevo</li>
                                             <!-- <li class="ingrediente">ingrediente 4 un</li> -->
                                         </ul>
-                                        <h4>Preparación:</h4>
+                                        <h4 data-section="receta-burger" data-value="preparacion-titulo">Preparación:</h4>
                                         <ol id="preparación-respinsive">
-                                            <li class="ingrediente">En un sartén, calentar el aceite. Una vez que esté listo, agregar la cebolla picada y la Sal de Campo Original.</li>
-                                            <li class="ingrediente">Cocinar hasta que la cebolla esté blanda y transparente.</li>
-                                            <li class="ingrediente">En un bol, juntar todos los ingredientes (incluyendo el sofrito) y con la mano integrar, amasando levemente la carne.</li>
-                                            <li class="ingrediente">Dividir la mezcla en 6 porciones y luego darles la forma de hamburguesa del diámetro que cada uno estime conveniente.</li>
-                                            <li class="ingrediente">Refrigerar por 30 minutos.</li>
-                                            <li class="ingrediente">Volver a calentar aceite en el sartén y colocar las hamburguesas. </li>
-                                            <li class="ingrediente">Cocinar a fuego medio hasta que estén doradas por ambos lados y su interior esté cocido.</li>
-                                            <li class="ingrediente"><span class="opcional"> Tip:</span>También podes usar Sal de Campo Ahumada o Sal de Campo 5 Pimientas para un toque más gourmet</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-1">En un sartén, calentar el aceite. Una vez que esté listo, agregar la cebolla picada y la Sal de Campo Original.</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-2">Cocinar hasta que la cebolla esté blanda y transparente.</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-3">En un bol, juntar todos los ingredientes (incluyendo el sofrito) y con la mano integrar, amasando levemente la carne.</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-4">Dividir la mezcla en 6 porciones y luego darles la forma de hamburguesa del diámetro que cada uno estime conveniente.</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-5">Refrigerar por 30 minutos.</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-6">Volver a calentar aceite en el sartén y colocar las hamburguesas.</li>
+                                            <li class="ingrediente" data-section="receta-burger" data-value="paso-7">Cocinar a fuego medio hasta que estén doradas por ambos lados y su interior esté cocido.</li>
+                                            <li class="ingrediente"><span class="opcional" data-section="receta-burger" data-value="tip">Tip:</span> <span data-section="receta-burger" data-value="paso-8">También podes usar Sal de Campo Ahumada o Sal de Campo 5 Pimientas para un toque más gourmet</span></li>
                                         </ol>
                                     </div>
                                 </div>
@@ -245,7 +273,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encontranos en nuestras Redes</h3>
+                            <h3 data-section="footer" data-value="redes">Encontranos en nuestras Redes</h3>
                              <!-- Social Icons -->
                         <div class="redes-nav" id="redes-footer">
                             <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
@@ -268,7 +296,7 @@
 
                             <!-- <p class="p-copyright" >Theme by <a href="http://graphberry.com">GraphBerry.com</a> Developed by <a target="_blank" href="http://www.themefisher.com">Themefisher</a></p>
                             -->
-                            <p>by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
+                            <p data-section="footer" data-value="derechos">by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
                         </div>
 
                     </div>
@@ -310,5 +338,7 @@
         <script src="js/galeria-filtro.js"></script>
         <!-- nav scroll -->
         <script src="js/receta-nav.js"></script>
+        <!-- Idiomas -->
+        <script src="js/languages.js"></script>
     </body>
 </html>

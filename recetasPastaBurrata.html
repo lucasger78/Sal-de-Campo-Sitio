@@ -70,6 +70,11 @@
 		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+         <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 
 		<!-- <div id="tienda-btn" style="display: none;">
@@ -92,9 +97,9 @@
     <body>
 
         <!--
-        Fixed Navigation
+         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top">
+        <header  class="navbar-fixed-top cabecera-nav">
             <div class="container">
 
                 <div class="navbar-header">
@@ -103,57 +108,83 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                         
                     </button>
                     <!-- /responsive nav button -->
                      
 
                     <!-- logo -->
                     <h1 class="navbar-brand">
-                        <a href="index.html#home">
+                        <a href="#home">
                             <img src="img/logo-SC.png" alt="Sal de Campo Logo" class="logo-nav">
                         </a>                        
                     </h1>
                     
                     <!-- /logo -->
-                    
-                      <!-- Social Icons -->
-                      <div class="redes-nav" id="redesNav">
+                    <!-- Social Icons -->
+                    <div class="redes-nav" id="redesNav">
                         
                         <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
-                            <img class="ig" src="img/icons/icons-instagram-recetas.png" alt="instagram">
+                            <img class="ig" src="img/icons/icons-instagram.png" alt="instagram">
                         </a>
                         <a class="icons-nav" href="https://www.tiktok.com/@saldecampo?lang-es" target="_blank">
-                            <img class="tk" src="img/icons/icons-tik-tok-recetas.png" alt="tiktok">
+                            <img class="tk" src="img/icons/icons-tik-tok.png" alt="tiktok">
                         </a>
                         <a class="icons-nav" href="https://www.facebook.com/saldecampo/" target="_blank">
-                            <img class="fb" src="img/icons/icons-facebook-recetas.png" alt="facebook">
+                            <img class="fb" src="img/icons/icons-facebook.png" alt="tiktok">
                         </a>
-                        <a class="icons-nav" href="https://walink.co/bd22ab" target="_blank">
-                            <img class="wts" src="img/icons/icons-whatsapp-recetas.png" alt="whatsapp">
+                        <a class="icons-nav" href="https://walink.co/8f1dc3" target="_blank">
+                            <img class="wts" src="img/icons/icons-whatsapp.png" alt="whatsapp">
                         </a>
                         
                     </div>
-            <!-- /Social Icons -->
-
+                   <!-- /Social Icons -->            
 
                     </div>
-
+                    
                     <!-- main nav -->
-                    <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
+                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="index.html#home" id="nav-text">Inicio</a></li>
-                            <li><a href="index.html#about" id="nav-text">Nosotros</a></li>
-                            <li><a href="index.html#producto" id="nav-text">Productos</a></li>
-                            <li><a href="index.html#idea" id="nav-text">Ideas y Recetas</a></li>                            
-                            <li><a href="index.html#contact" id="nav-text">Contacto</a></li>
-                            <li class="tienda"><button class="boton btn btn-danger"><a href="https://saldecampo.store/" class="text-btn" target="_blank"><img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">Tienda</a></button></li>
-                        </ul>
-                        
-                    </nav>
+                            <li><a href="index.html#home" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="index.html#about" data-section="nav" data-value="nosotros">Nosotros</a></li>
+                            <li><a href="index.html#producto" data-section="nav" data-value="productos">Productos</a></li>
+                            <li class="current"><a href="index.html#idea" data-section="nav" data-value="ideas">Ideas y Recetas</a></li>                            
+                            <li><a href="index.html#contact" data-section="nav" data-value="contacto">Contacto</a></li>
+                             <li class="tienda">
+                            <a href="https://saldecampo.store/" target="_blank" class="btn-tienda">
+                                <img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">
+                                <span data-section="nav" data-value="tienda">Tienda</span>
+                            </a>
+                            </li>
+                        </ul>                       
+                    </nav>                 
                     <!-- /main nav -->
-                </div>
 
+                     <!-- Flags -->
+
+                        <div id="flags" class="flags flags_img">
+                            <div class="flags_icon">
+                                <i class="fas fa-language icons-translate" ></i>
+                                 <!-- <span class="material-icons icons-translate">translate</span> -->
+                            </div>                            
+                            <div class="flags_items flags-ar" data-language="es">
+                                <!-- <img src="img/icons/ar.svg" alt="ar"/> -->
+                                 <h5 style="color: whitesmoke;" class="avb-lenguage">es</h5>
+                            </div>
+                            <div class="flags_items flags-gb" data-language="en">
+                                <!-- <img src="img/icons/gb.svg" alt="en"/> -->
+                                  <h5 style="color: whitesmoke;" class="avb-lenguage">eng  </h5>
+                            </div>
+                            <div class="flags_items flags-br" data-language="por">
+                                <!-- <img src="img/icons/br.svg" alt="br"/> -->
+                                  <h5 style="color: whitesmoke;" class="avb-lenguage">por</h5>
+                            </div>
+                        </div>
+
+                        
+                        <!-- End Flags -->
+                    
+                </div> 
             </div>
         </header>
         <!--
@@ -169,21 +200,21 @@
                     <!-- <div class="recetas-bg" style="background-image: url('img/slider/bg1a.jpg')" >  -->
                         <div class="receta-area">
                             <div class="container">
-                                <h1 class="titulo-ideas">Ideas & Recetas</h1>
+                                <h1 class="titulo-ideas" data-section="receta-pastaburrata" data-value="titulo-principal">Ideas & Recetas</h1>
                                 
                                 <div class="container-recetas">
                                     <div class="col-md-4 col-sm-3 wow fadeInRight detalles-items" id="tips">
                                         <div class="recetas-details reloj">
-                                            <br><span class="text-detail">Tiempo de Cocción <img class="icon-detalles" src="img/icons/time-icon.png" alt="reloj"></span>
-                                            <p class="text-detail">35 min</p><br> 
+                                            <br><span class="text-detail"><span data-section="receta-pastaburrata" data-value="tiempo-label">Tiempo de Cocción</span> <img class="icon-detalles" src="img/icons/time-icon.png" alt="reloj"></span>
+                                            <p class="text-detail" data-section="receta-pastaburrata" data-value="tiempo-valor">35 min</p><br> 
                                         </div>
                                         <div class="recetas-details porcion">
-                                            <br><span class="text-detail">Porciones <img class="icon-detalles" src="img/icons/porcion-icon.png" alt="reloj"></span>
-                                            <p class="text-detail">Rinde 4 porciones</p><br> 
+                                            <br><span class="text-detail"><span data-section="receta-pastaburrata" data-value="porciones-label">Porciones</span> <img class="icon-detalles" src="img/icons/porcion-icon.png" alt="reloj"></span>
+                                            <p class="text-detail" data-section="receta-pastaburrata" data-value="porciones-valor">Rinde 4 porciones</p><br> 
                                         </div>
                                         <div class="recetas-details dificultad">
-                                            <br><span class="text-detail">Dificultad <img class="icon-detalles" src="img/icons/dificultad-icon.png" alt="reloj"></span>
-                                            <p class="text-detail">Fácil</p><br> 
+                                            <br><span class="text-detail"><span data-section="receta-pastaburrata" data-value="dificultad-label">Dificultad</span> <img class="icon-detalles" src="img/icons/dificultad-icon.png" alt="reloj"></span>
+                                            <p class="text-detail" data-section="receta-pastaburrata" data-value="dificultad-valor">Fácil</p><br> 
                                         </div>
                                       
                 
@@ -193,29 +224,29 @@
                                         <img src="img/recetas/ahumada-2.jpg" alt="espaguetis">
                                     </div>
                                     <div class="content content-recetas">
-                                        <h2>Espaguetis con Tomates Cherrys, Albahaca y Burrata</h2>
-                                        <h4>Ingredientes:</h4>
+                                        <h2 data-section="receta-pastaburrata" data-value="titulo-receta">Espaguetis con Tomates Cherrys, Albahaca y Burrata</h2>
+                                        <h4 data-section="receta-pastaburrata" data-value="ingredientes-titulo">Ingredientes:</h4>
                                         <ul id="ingredientes-responsive">
-                                            <li class="ingrediente">220g de Pasta</li>
-                                            <li class="ingrediente">2-6 dientes de ajo (a gusto)</li>
-                                            <li class="ingrediente">60mL de Aceite de Oliva</li>
-                                            <li class="ingrediente">Albahaca fresca</li>
-                                            <li class="ingrediente">400g de Tomates</li>
-                                            <li class="ingrediente">1 bola de Queso Burrata</li>
-                                            <li class="ingrediente">Pimiento rojo</li> 
-                                            <li class="ingrediente">Sal de Campo Ahumada a gusto</li> 
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-1">220g de Pasta</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-2">2-6 dientes de ajo (a gusto)</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-3">60mL de Aceite de Oliva</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-4">Albahaca fresca</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-5">400g de Tomates</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-6">1 bola de Queso Burrata</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-7">Pimiento rojo</li> 
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="ingrediente-8">Sal de Campo Ahumada a gusto</li> 
                                         </ul>
-                                        <h4>Preparación:</h4>
+                                        <h4 data-section="receta-pastaburrata" data-value="preparacion-titulo">Preparación:</h4>
                                         <ol id="preparación-respinsive">
-                                            <li class="ingrediente">Hervir agua</li>
-                                            <li class="ingrediente">En una sartén añadí aceite, salteá el ajo y agregale cubitos de pimiento rojo</li>
-                                            <li class="ingrediente">Luego poné los tomates cherry.</li>
-                                            <li class="ingrediente">Cociná la pasta hasta que esté aprox. al 80% de cocción.</li>
-                                            <li class="ingrediente">Usando unas pinzas, colocá la pasta en la sartén con los tomates.</li>
-                                            <li class="ingrediente">Terminá y remové la pasta para ayudar a formar una salsa.</li>
-                                            <li class="ingrediente">Serví la pasta y añadile el queso Burrata por encima.</li>
-                                            <li class="ingrediente">Cortá la burrata y rocía con aceite de oliva + Sal de Campo Ahumada. ¡Este paso es esencial!</li>
-                                            <li class="ingrediente"><span class="opcional">¡Disfruta!</span></li>                                            
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-1">Hervir agua</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-2">En una sartén añadí aceite, salteá el ajo y agregale cubitos de pimiento rojo</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-3">Luego poné los tomates cherry.</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-4">Cociná la pasta hasta que esté aprox. al 80% de cocción.</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-5">Usando unas pinzas, colocá la pasta en la sartén con los tomates.</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-6">Terminá y remové la pasta para ayudar a formar una salsa.</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-7">Serví la pasta y añadile el queso Burrata por encima.</li>
+                                            <li class="ingrediente" data-section="receta-pastaburrata" data-value="paso-8">Cortá la burrata y rociá con aceite de oliva + Sal de Campo Ahumada. ¡Este paso es esencial!</li>
+                                            <li class="ingrediente"><span class="opcional" data-section="receta-pastaburrata" data-value="paso-9">¡Disfruta!</span></li>                                            
                                         </ol>
                                     </div>
                                 </div>
@@ -247,7 +278,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encontranos en nuestras Redes</h3>
+                            <h3 data-section="footer" data-value="redes">Encontranos en nuestras Redes</h3>
                              <!-- Social Icons -->
                         <div class="redes-nav" id="redes-footer">
                             <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
@@ -270,7 +301,7 @@
 
                             <!-- <p class="p-copyright" >Theme by <a href="http://graphberry.com">GraphBerry.com</a> Developed by <a target="_blank" href="http://www.themefisher.com">Themefisher</a></p> -->
                            
-                            <p>by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
+                            <p data-section="footer" data-value="derechos">by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
                         </div>
 
                     </div>
@@ -312,5 +343,7 @@
         <script src="js/galeria-filtro.js"></script>
         <!-- nav scroll -->
         <script src="js/receta-nav.js"></script>
+        <!-- Idiomas -->
+        <script src="js/languages.js"></script>
     </body>
 </html>

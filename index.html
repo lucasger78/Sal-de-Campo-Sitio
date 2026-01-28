@@ -62,6 +62,14 @@
         <link rel="stylesheet" href="css/new-style.css">
         <!-- Productos -->
         <link rel="stylesheet" href="css/productos.css">
+
+   
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
         
 		
 		
@@ -79,13 +87,6 @@
         </div> 
 
         <!-- ========== END WHATSAPP BUTTON ========== -->
-
-
-
-
-		<!-- <div id="tienda-btn" style="display: none;">
-            <button class="boton-tienda btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo.png" alt="carrito Logo" class="carro">Tienda</a></button>
-        </div> -->
     </head>
 	
     <body>
@@ -139,27 +140,47 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="#home">Inicio</a></li>
-                            <li><a href="#about">Nosotros</a></li>
-                            <li><a href="#producto">Productos</a></li>
-                            <li><a href="#idea">Ideas y Recetas</a></li>                            
-                            <li><a href="#contact">Contacto</a></li>
-                            <!-- <li class="tienda"><button class="boton btn btn-danger"><a href="https://saldecampo.store/" class="text-btn" target="_blank"><img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">Tienda</a></button></li> -->
+                            <li class="current"><a href="#home" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="#about" data-section="nav" data-value="nosotros">Nosotros</a></li>
+                            <li><a href="#producto" data-section="nav" data-value="productos">Productos</a></li>
+                            <li><a href="#idea" data-section="nav" data-value="ideas">Ideas y Recetas</a></li>                            
+                            <li><a href="#contact" data-section="nav" data-value="contacto">Contacto</a></li>
                              <li class="tienda">
                             <a href="https://saldecampo.store/" target="_blank" class="btn-tienda">
                                 <img src="img/carritoLogo-Recetas.png" alt="carrito Logo" class="carro">
-                                Tienda
+                                <span data-section="nav" data-value="tienda">Tienda</span>
                             </a>
                             </li>
                         </ul>                       
                     </nav>                   
                     <!-- /main nav -->
+
+                     <!-- Flags -->
+
+                        <div id="flags" class="flags flags_img">
+                            <div class="flags_icon">
+                                <i class="fas fa-language icons-translate" ></i>
+                                 <!-- <span class="material-icons icons-translate">translate</span> -->
+                            </div>                            
+                            <div class="flags_items flags-ar" data-language="es">
+                                <!-- <img src="img/icons/ar.svg" alt="ar"/> -->
+                                 <h5 style="color: whitesmoke;" class="avb-lenguage">es</h5>
+                            </div>
+                            <div class="flags_items flags-gb" data-language="en">
+                                <!-- <img src="img/icons/gb.svg" alt="en"/> -->
+                                  <h5 style="color: whitesmoke;" class="avb-lenguage">eng  </h5>
+                            </div>
+                            <div class="flags_items flags-br" data-language="por">
+                                <!-- <img src="img/icons/br.svg" alt="br"/> -->
+                                  <h5 style="color: whitesmoke;" class="avb-lenguage">por</h5>
+                            </div>
+                        </div>
+
+                        
+                        <!-- End Flags -->
                     
                 </div> 
             </div>
-            <!-- <div id="tienda-btn" style="display: none;">
-                <button class="boton btn btn-danger"><a href="#" class="text-btn"><img src="img/carritoLogo.png" alt="carrito Logo" class="carro">Tienda</a></button>
-            </div> -->
         </header>
         <!--
         End Fixed Navigation
@@ -176,23 +197,16 @@
                     <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#home-carousel" data-slide-to="1"></li>
                     <li data-target="#home-carousel" data-slide-to="2"></li>
-                    <li data-target="#home-carousel" data-slide-to="3"></li>
                 </ol>
 
                 
                 <!--/.carousel-indicators-->
                 <div class="carousel-inner">                    
 
-                    <div class="item active"  style="background-image: url('img/slider/bg0.jpg')" >
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-
-                    <div class="item"  style="background-image: url('img/slider/bg1a.jpg')" >
+                    <div class="item active"  style="background-image: url('img/slider/bg1a.jpg')" >
                         <div class="carousel-caption">
                             <div class="animated bounceInRight">
-                                <h2>Los sabores del campo, <br>en tu cocina de todos los días…</h2>
-                                <!-- <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p> -->
+                                <h2 data-section="slider" data-value="titulo-1">Los sabores del campo, <br>en tu cocina de todos los días…</h2>
                             </div>
                         </div>
                     </div>              
@@ -200,8 +214,7 @@
                     <div class="item" style="background-image: url('img/slider/bg2.jpg')">                
                         <div class="carousel-caption">
                             <div class="animated bounceInDown">
-                                <h2>Para todo tipo <br>de comidas y cocción…</h2>
-                                <!-- <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p> -->
+                                <h2 data-section="slider" data-value="titulo-2">Para todo tipo <br>de comidas y cocción…</h2>
                             </div>
                         </div>
                     </div>
@@ -209,8 +222,7 @@
                     <div class="item" style="background-image: url('img/slider/bg3.jpg')">                 
                          <div class="carousel-caption">
                             <div class="animated bounceInUp">
-                                <h2>Carnes, verduras, pastas, <br>salsas y mucho más…</h2>
-                                <!-- <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p> -->
+                                <h2 data-section="slider" data-value="titulo-3">Carnes, verduras, pastas, <br>salsas y mucho más…</h2>
                             </div>
                         </div>
                     </div>
@@ -241,8 +253,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInDown">
-                            <h2>Nosotros</h2>    
-                            <p id="about-p">Innovando en el segmento de sales saborizadas desde el año 2010, Sal de Campo te trae los aromas y sabores de las costumbres criollas y populares para las comidas de todos los días, ofreciendo lo mejor en la certificación de calidad y procesos productivos para llevar nuestra marca a todo el país.</p>
+                            <h2 data-section="about" data-value="titulo">Nosotros</h2>    
+                            <p id="about-p" data-section="about" data-value="parrafo">Innovando en el segmento de sales saborizadas desde el año 2010, Sal de Campo te trae los aromas y sabores de las costumbres criollas y populares para las comidas de todos los días, ofreciendo lo mejor en la certificación de calidad y procesos productivos para llevar nuestra marca a todo el país.</p>
                         </div>
                     </div>
                 </div>             
@@ -257,10 +269,10 @@
                         <div class="col-md-12">
                            
                             <div class="section-title text-center wow fadeInDown">
-                                <h2>Un poco de historia</h2> 
-                                <p id="history-p"> A principios de 1900, las familias que vivían en el campo usaban la mezcla sal, hierbas y especias que ponemos en nuestros productos. Hoy, esas familias están en los pueblos y ciudades del interior, pero quedan muy pocas en las zonas rurales.
+                                <h2 data-section="about" data-value="historia-titulo">Un poco de historia</h2> 
+                                <p id="history-p" data-section="about" data-value="historia-parrafo"> A principios de 1900, las familias que vivían en el campo usaban la mezcla sal, hierbas y especias que ponemos en nuestros productos. Hoy, esas familias están en los pueblos y ciudades del interior, pero quedan muy pocas en las zonas rurales.
                                 Desde Sal de Campo, buscamos trasladar esos usos y costumbres de la pampa húmeda, para qué puedas vivir las mismas experiencias en el día a día a través de los sabores de un simple plato de comida, dando origen a nuestro nombre y slogan.   <br><br>
-                                <span class="nameSlogan">Sal de Campo.  Los sabores del campo, en tu cocina de todos los días…</span>
+                                <span class="nameSlogan" data-section="about" data-value="slogan">Sal de Campo.  Los sabores del campo, en tu cocina de todos los días…</span>
                                 </p> 
                             </div> 
                         </div>
@@ -283,13 +295,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInDown">
-                            <h2>Nuestros Productos</h2>    
-                            <p id="product-p">Cada uno de nuestros productos tienen un sabor especial. Descubrí tu favorito…</p>
+                            <h2 data-section="productos" data-value="titulo">Nuestros Productos</h2>    
+                            <p id="product-p" data-section="productos" data-value="parrafo">Cada uno de nuestros productos tienen un sabor especial. Descubrí tu favorito…</p>
                             <br><br>
-                            <a href="01-Catalogo_Sal_de_Campo-ESP.pdf" class="text-btn-catalogo btn btn-danger boton-catalogo" target="_blank">Descargar Catálogo</a>
-                             <!-- <button class="text-btn-catalogo btn btn-danger boton-catalogo">                                 
-                                 Descargar Catálogo
-                             </button> -->
+                            <a href="01-Catalogo_Sal_de_Campo-ESP.pdf" class="text-btn-catalogo btn btn-danger boton-catalogo" target="_blank">
+                                <span data-section="productos" data-value="catalogo">Descargar Catálogo</span>
+                            </a>
                         </div>
                        
                         <div class="mobile-device">
@@ -299,125 +310,122 @@
                 </div>                   
             </div>
             <div>
-                <section class="productos-gallery">
+        <section class="productos-gallery">
         
-                    <div class="producto">
-                        <div class="content-producto original" id="contenedor-original">
-                            <img class="img-producto" id="img-original" src="img/productos/original.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="original-span">Original</h4>
-                            <h5 class="sub-title-prod">Mezcla de Sal Entrefina con Hierbas y Especias</h5>
-                            <p class="párrafo-prod p-def">La receta original de nuestra familia, donde todo comenzó. La mezcla de sal entrefina hierbas y especias para usar en todo tipo de comidas y cocción</p>
-                            <p class="párrafo-prod">
-                                Ingredientes:
-                                <span id="ingredientes-preview-entrefina" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-entrefina" class="text-hidden" style="display: none;">sal entrefina, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
-                                <span id="ver-mas-entrefina"><a class="verMas">Ver más</a></span></p>
-                                                          
-                            <!-- <button class="btn btn-danger"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=2" target="_blank" id="original-info">+ Info</a></span></button><br><br> -->
-                        </div>                                              
-                    </div>   
-                    
-                    <div class="producto" >
-                        <div class="content-producto fina" id="contenedor-fina">
-                            <img class="img-producto" id="img-fina" src="img/productos/fina.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="fina-span">Fina</h4>
-                            <h5 class="sub-title-prod">Mezcla de Sal Fina con Hierbas y Especias</h5>
-                            <p class="párrafo-prod p-def">La misma receta de Sal de Campo Original, pero elaborada con sal fina, hierbas y especias. Pensada para las comidas de todos los días.</p>
-                            <p class="párrafo-prod">
-                                Ingredientes:
-                                <span id="ingredientes-preview-fina" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-fina" class="text-hidden" style="display: none;">sal fina, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
-                                <span id="ver-mas-fina"><a class="verMas">Ver más</a></span></p>
-                                
-                            <!-- <button class="btn btn-warning"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=3" target="_blank" id="fina-info">+ Info</a></span></button><br><br> -->
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="content-producto ahumada" id="contenedor-ahumada">
-                            <img class="img-producto" id="img-ahumada" src="img/productos/ahumada.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="ahumada-span">Ahumada</h4>
-                            <h5 class="sub-title-prod">Mezcla de Sal Entrefina Ahumada con Hierbas y Especias</h5>
-                            <p class="párrafo-prod p-def">Con la mezcla de sal, hierbas y especias de siempre y un toque de ahumado para salir de la rutina</p>
-                            <p class="párrafo-prod">
-                                Ingredientes:
-                                <span id="ingredientes-preview-ahumada" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-ahumada" class="text-hidden" style="display: none;">sal entrefina ahumada, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
-                                <span id="ver-mas-ahumada"><a class="verMas">Ver más</a></span></p>
-                                <br>   
-                            <!-- <button class="btn btn-dark"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=4" target="_blank" id="ahumada-info">+ Info</a></span></button><br><br>--> 
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="content-producto pimientas" id="contenedor-pimientas">
-                            <img class="img-producto" id="img-pimientas" class="text-hidden" src="img/productos/5pmimientas.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="pimientas-span" class="text-hidden">5 Pimientas</h4>
-                            <h5 class="sub-title-prod">Mezcla de Sal Entrefina con Mix de Pimientas Trituradas</h5>
-                            <p class="párrafo-prod p-def">Pensada para el típico bife de chorizo argentino pero que aplica para las comidas que mas quieras</p>
-                            <p class="párrafo-prod">
-                                Ingredientes:
-                                <span id="ingredientes-preview-pimientas" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-pimientas" class="text-hidden" style="display: none;">sal entrefina, pimienta negra triturada, pimienta blanca triturada, pimienta jamaica triturada, pimienta rosa triturada y pimienta verde triturada.</span>
-                                <span id="ver-mas-pimientas"><a class="verMas">Ver más</a></span></p>
-                                <br><br>
-                            <!-- <button class="btn btn-primary"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=5" target="_blank" id="pimientas-info">+ Info</a></span></button><br><br> -->
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="content-producto suave" id="contenedor-suave">
-                            <img class="img-producto" id="img-suave" src="img/productos/suave.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="suave-span">Light</h4>
-                            <h5 class="sub-title-prod">Mezcla de Sal Fina reducida en Sodio  (-50%), con Hierbas y Especias</h5>
-                            <p class="párrafo-prod p-def">Para aquellas personas que desean cuidarse en el uso de la sal, sin perder los aromas y sabores del campo.</p>
-                            <p class="párrafo-prod">
-                                Ingredientes: 
-                                <span id="ingredientes-preview-suave" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-suave" class="text-hidden" style="display: none;">sal fina reducida en sodio, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
-                                <span id="ver-mas-suave"><a class="verMas">Ver más</a></span></p><br>
-                            <!-- <button class="btn btn-success"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=6" target="_blank" id="suave-info">+ Info</a></span></button><br><br> -->
-                        </div>                        
-                    </div>
-                    <div class="producto">
-                        <div class="content-producto especial" id="contenedor-especial">
-                            <img class="img-producto" id="img-especial" src="img/productos/especial.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="especial-span">Especial</h4>
-                            <h5 class="sub-title-prod">Mezcla de Hierbas y Especias (No contiene Sal)</h5>                            
-                            <p class="párrafo-prod p-def-esp p-def"">Las especias puras, para usar cuando más prefieras</p>
-                            <p class="párrafo-prod" >
-                                Ingredientes:
-                                <span id="ingredientes-preview-especial" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-especial" class="text-hidden" style="display: none;">pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
-                                <span id="ver-mas-especial"><a class="verMas">Ver más</a></span></p>
-                                <br><br><br>
-                            <!-- <button class="btn btn-warning special"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=7" target="_blank" id="especial-info">+ Info</a></span></button><br><br> -->
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <div class="content-producto marina" id="contenedor-marina">
-                            <img class="img-producto" id="img-marina" src="img/productos/marina.jpg" alt="galeria-productos">
-                            <h4 class="title-prod" id="marina-span">Marina</h4>
-                            <h5 class="sub-title-prod">Sal Fina Marina Con o Sin de Hierbas y Especias </h5>                            
-                                                       
-                            <p class="párrafo-prod p-def-mar p-def">Resalta los sabores de tus comidas, para usar cuando más prefieras</p>
-                            <p class="párrafo-prod" >
-                                Ingredientes (version con hierbas y especias):
-                                <span id="ingredientes-preview-marina" class="text-hidden">...</span>
-                                <span id="ingredientes-completos-marina" class="text-hidden" style="display: none;">sal fina marina, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
-                                <span id="ver-mas-marina"><a class="verMas">Ver más</a></span></p><br>
-                                
-                            <!-- <button class="btn btn-warning special"><span class="masInfo-original sub-title-prod"><a href="catalogo/Sal-de-Campo-Catalogo.pdf#page=7" target="_blank" id="especial-info">+ Info</a></span></button><br><br> -->
-                        </div>
-                    </div>
-                </section> 
+            <div class="producto">
+                <div class="content-producto original" id="contenedor-original">
+                    <img class="img-producto" id="img-original" src="img/productos/original.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="original-span" data-section="productos" data-value="original-titulo">Original</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="original-subtitulo">Mezcla de Sal Entrefina con Hierbas y Especias</h5>
+                    <p class="párrafo-prod p-def" data-section="productos" data-value="original-descripcion">La receta original de nuestra familia, donde todo comenzó. La mezcla de sal entrefina hierbas y especias para usar en todo tipo de comidas y cocción</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes:</span>
+                        <span id="ingredientes-preview-entrefina" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-entrefina" class="text-hidden" style="display: none;" data-section="productos" data-value="original-ingredientes">sal entrefina, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
+                        <span id="ver-mas-entrefina"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                </div>                                              
+            </div>   
+            
+            <div class="producto">
+                <div class="content-producto fina" id="contenedor-fina">
+                    <img class="img-producto" id="img-fina" src="img/productos/fina.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="fina-span" data-section="productos" data-value="fina-titulo">Fina</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="fina-subtitulo">Mezcla de Sal Fina con Hierbas y Especias</h5>
+                    <p class="párrafo-prod p-def" data-section="productos" data-value="fina-descripcion">La misma receta de Sal de Campo Original, pero elaborada con sal fina, hierbas y especias. Pensada para las comidas de todos los días.</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes:</span>
+                        <span id="ingredientes-preview-fina" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-fina" class="text-hidden" style="display: none;" data-section="productos" data-value="fina-ingredientes">sal fina, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
+                        <span id="ver-mas-fina"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <div class="content-producto ahumada" id="contenedor-ahumada">
+                    <img class="img-producto" id="img-ahumada" src="img/productos/ahumada.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="ahumada-span" data-section="productos" data-value="ahumada-titulo">Ahumada</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="ahumada-subtitulo">Mezcla de Sal Entrefina Ahumada con Hierbas y Especias</h5>
+                    <p class="párrafo-prod p-def" data-section="productos" data-value="ahumada-descripcion">Con la mezcla de sal, hierbas y especias de siempre y un toque de ahumado para salir de la rutina</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes:</span>
+                        <span id="ingredientes-preview-ahumada" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-ahumada" class="text-hidden" style="display: none;" data-section="productos" data-value="ahumada-ingredientes">sal entrefina ahumada, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
+                        <span id="ver-mas-ahumada"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                    <br>   
+                </div>
+            </div>
+            
+            <div class="producto">
+                <div class="content-producto pimientas" id="contenedor-pimientas">
+                    <img class="img-producto" id="img-pimientas" src="img/productos/5pmimientas.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="pimientas-span" data-section="productos" data-value="pimientas-titulo">5 Pimientas</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="pimientas-subtitulo">Mezcla de Sal Entrefina con Mix de Pimientas Trituradas</h5>
+                    <p class="párrafo-prod p-def" data-section="productos" data-value="pimientas-descripcion">Pensada para el típico bife de chorizo argentino pero que aplica para las comidas que mas quieras</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes:</span>
+                        <span id="ingredientes-preview-pimientas" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-pimientas" class="text-hidden" style="display: none;" data-section="productos" data-value="pimientas-ingredientes">sal entrefina, pimienta negra triturada, pimienta blanca triturada, pimienta jamaica triturada, pimienta rosa triturada y pimienta verde triturada.</span>
+                        <span id="ver-mas-pimientas"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                    <br><br>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <div class="content-producto suave" id="contenedor-suave">
+                    <img class="img-producto" id="img-suave" src="img/productos/suave.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="suave-span" data-section="productos" data-value="suave-titulo">Light</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="suave-subtitulo">Mezcla de Sal Fina reducida en Sodio  (-50%), con Hierbas y Especias</h5>
+                    <p class="párrafo-prod p-def" data-section="productos" data-value="suave-descripcion">Para aquellas personas que desean cuidarse en el uso de la sal, sin perder los aromas y sabores del campo.</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes:</span> 
+                        <span id="ingredientes-preview-suave" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-suave" class="text-hidden" style="display: none;" data-section="productos" data-value="suave-ingredientes">sal fina reducida en sodio, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
+                        <span id="ver-mas-suave"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                    <br>
+                </div>                        
+            </div>
+            
+            <div class="producto">
+                <div class="content-producto especial" id="contenedor-especial">
+                    <img class="img-producto" id="img-especial" src="img/productos/especial.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="especial-span" data-section="productos" data-value="especial-titulo">Especial</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="especial-subtitulo">Mezcla de Hierbas y Especias (No contiene Sal)</h5>                            
+                    <p class="párrafo-prod p-def-esp p-def" data-section="productos" data-value="especial-descripcion">Las especias puras, para usar cuando más prefieras</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes:</span>
+                        <span id="ingredientes-preview-especial" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-especial" class="text-hidden" style="display: none;" data-section="productos" data-value="especial-ingredientes">pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
+                        <span id="ver-mas-especial"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                    <br><br><br>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <div class="content-producto marina" id="contenedor-marina">
+                    <img class="img-producto" id="img-marina" src="img/productos/marina.jpg" alt="galeria-productos">
+                    <h4 class="title-prod" id="marina-span" data-section="productos" data-value="marina-titulo">Marina</h4>
+                    <h5 class="sub-title-prod" data-section="productos" data-value="marina-subtitulo">Sal Fina Marina Con o Sin de Hierbas y Especias</h5>                            
+                    <p class="párrafo-prod p-def-mar p-def" data-section="productos" data-value="marina-descripcion">Resalta los sabores de tus comidas, para usar cuando más prefieras</p>
+                    <p class="párrafo-prod">
+                        <span data-section="productos" data-value="ingredientes">Ingredientes</span> 
+                        <span data-section="productos" data-value="marina-version">(version con hierbas y especias)</span>:
+                        <span id="ingredientes-preview-marina" class="text-hidden">...</span>
+                        <span id="ingredientes-completos-marina" class="text-hidden" style="display: none;" data-section="productos" data-value="marina-ingredientes">sal fina marina, pimienta negra molida, nuez moscada molida, pimentón, orégano, tomillo, ají molido, provenzal, romero y laurel.</span>
+                        <span id="ver-mas-marina"><a class="verMas" data-section="productos" data-value="ver-mas">Ver más</a></span>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            
+        </section>
                 
         </section>
-        <!-- <div class="col-md-12">
-            <div class="section-title text-center wow fadeInDown">
-                    
-                <h3 id="new-product-p">Nuevos productos?</h3>
-                <h3 id="new-product-r">Muy pronto</h3>
-            
-            </div>
-        </div> -->
         <!--
         End #service-bottom
         ========================== -->
@@ -430,13 +438,13 @@
         <section id="idea">
 
             <div class="section-title text-center wow fadeInDown">
-                <h2>Ideas & Recetas</h2>    
-                <p id="recetas-p">Te dejamos algunas sugerencias y recetas. Podes mirarlas a todas juntas o buscar por tipo de producto.</p>
+                <h2 data-section="recetas" data-value="titulo">Ideas & Recetas</h2>    
+                <p id="recetas-p" data-section="recetas" data-value="parrafo">Te dejamos algunas sugerencias y recetas. Podes mirarlas a todas juntas o buscar por tipo de producto.</p>
             </div>
             
             <nav class="project-filter clearfix text-center wow fadeInLeft"  data-wow-delay="0.5s">
                 <ul class="list-inline">
-                    <li><a href="javascript:;" class="filter nav-ideas" data-filter="all">Todas</a></li>
+                    <li><a href="javascript:;" class="filter nav-ideas" data-filter="all" data-section="recetas" data-value="todas">Todas</a></li>
                     <li><a href="javascript:;" class="filter nav-ideas" data-filter=".original">Original</a></li>
                     <li><a href="javascript:;" class="filter nav-ideas" data-filter=".fina">Fina</a></li>
                     <li><a href="javascript:;" class="filter nav-ideas" data-filter=".pimientas">5 Pimientas</a></li>
@@ -454,8 +462,8 @@
                     <img class="img-responsive" src="img/recetas/original-1.jpg" alt="Producto Item">
                     <a href="recetasBurger.html" title="Title One" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Hamburguesas Caseras</h3>
-                        <span class="original-span">Sal de Campo Original</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-burger">Hamburguesas Caseras</h3>
+                        <span class="original-span" data-section="recetas" data-value="original-sal">Sal de Campo Original</span>
                     </figcaption>
                 </figure>
 
@@ -463,8 +471,8 @@
                     <img class="img-responsive" src="img/recetas/fina-1.jpg" alt="Producto Item">
                     <a href="recetasSalsaLocro.html" title="Title Two" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Salsa para Locro</h3>
-                        <span class="fina-2">Sal de Campo</span> <span class="fina-1">Fina</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-locro">Salsa para Locro</h3>
+                        <span class="fina-2" data-section="recetas" data-value="fina-sal">Sal de Campo</span> <span class="fina-1" data-section="recetas" data-value="title-fina">Fina</span>
                     </figcaption>
                 </figure>
 
@@ -472,8 +480,8 @@
                     <img class="img-responsive" src="img/recetas/pimientas-1.jpg" alt="Producto Item">
                     <a href="recetasBifeChorizo.html" title="Title Three" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Bifes de Chorizo al Malbec</h3>
-                        <span class="pimientas-span">Sal de Campo 5 Pimientas</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-bife">Bifes de Chorizo al Malbec</h3>
+                        <span class="pimientas-span" data-section="recetas" data-value="5p-sal">Sal de Campo 5 Pimientas</span>
                     </figcaption>
                 </figure>
 
@@ -481,8 +489,8 @@
                     <img class="img-responsive" src="img/recetas/ahumada-2.jpg" alt="Producto Item">
                     <a href="recetasPastaBurrata.html" title="Title Four" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Espaguetis con Tomates Cherrys...</h3>
-                        <span class="ahumada-span">Sal de Campo Ahumada</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-espaguetis">Espaguetis con Tomates Cherrys...</h3>
+                        <span class="ahumada-span" data-section="recetas" data-value="ahumada-sal">Sal de Campo Ahumada</span>
                     </figcaption>
                 </figure>
 
@@ -490,8 +498,8 @@
                     <img class="img-responsive" src="img/recetas/suave-1.jpg" alt="Producto Item">
                     <a href="recetasEnsaladadePasta.html" title="Title Five" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Ensalada de Pasta</h3>
-                        <span class="suave-span">Sal de Campo Suave</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-ensalada">Ensalada de Pasta</h3>
+                        <span class="suave-span" data-section="recetas" data-value="suave-sal">Sal de Campo Suave</span>
                     </figcaption>
                 </figure>
 
@@ -499,8 +507,8 @@
                     <img class="img-responsive" src="img/recetas/especial-1.jpg" alt="Producto Item">
                     <a href="recetasArrozPrimavera.html" title="Title Six" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Arroz Primavera</h3>
-                        <span class="especial-span">Sal de Campo Especial</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-arroz">Arroz Primavera</h3>
+                        <span class="especial-span" data-section="recetas" data-value="especial-sal">Sal de Campo Especial</span>
                     </figcaption>
                 </figure>
 
@@ -508,8 +516,8 @@
                     <img class="img-responsive" src="img/recetas/fina-2.jpg" alt="Producto Item">
                     <a href="recetasVinagreta.html" title="Title Seven" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Vinagreta de Sal de Campo</h3>
-                        <span class="fina-2">Sal de Campo</span> <span class="fina-1">Fina</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-vinagreta">Vinagreta de Sal de Campo</h3>
+                        <span class="fina-2" data-section="recetas" data-value="fina-sal">Sal de Campo</span> <span class="fina-1" data-section="recetas" data-value="title-fina">Fina</span>
                     </figcaption>
                 </figure>
 
@@ -517,8 +525,8 @@
                     <img class="img-responsive" src="img/recetas/marina-esp-1.jpg" alt="Producto Item">
                     <a href="recetasGuisoCarrero.html" title="Title One" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Guiso Carrero</h3>
-                        <span class="marina-span">Sal de Campo Marina con Especias</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-guiso">Guiso Carrero</h3>
+                        <span class="marina-span" data-section="recetas" data-value="marinaesp-sal">Sal de Campo Marina con Especias</span>
                     </figcaption>
                 </figure>
 
@@ -526,8 +534,8 @@
                     <img class="img-responsive" src="img/recetas/marina-1.jpg" alt="recetas Item">
                     <a href="recetasSopaCalabaza.html" title="Title Two" rel="recetas" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Sopa de Calabaza</h3>
-                        <span class="marina-span">Sal de Campo Marina</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-sopa">Sopa de Calabaza</h3>
+                        <span class="marina-span" data-section="recetas" data-value="marina-sal">Sal de Campo Marina</span>
                     </figcaption>
                 </figure>
 
@@ -535,8 +543,8 @@
                     <img class="img-responsive" src="img/recetas/original-2.jpg" alt="Producto Item">
                     <a href="recetasSalMuera.html" title="Title One" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Salmuera</h3>
-                        <span class="original-span">Sal de Campo Original</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-salmuera">Salmuera</h3>
+                        <span class="original-span" data-section="recetas" data-value="original-sal">Sal de Campo Original</span>
                     </figcaption>
                 </figure>
 
@@ -544,8 +552,8 @@
                     <img class="img-responsive" src="img/recetas/especial-2.jpg" alt="Producto Item">
                     <a href="recetasAderezo.html" title="Title One" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Aderezo Saborizado</h3>
-                        <span class="especial-span">Sal de Campo Especial</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-aderezo">Aderezo Saborizado</h3>
+                        <span class="especial-span" data-section="recetas" data-value="especial-sal">Sal de Campo Especial</span>
                     </figcaption>
                 </figure>
 
@@ -553,8 +561,8 @@
                     <img class="img-responsive" src="img/recetas/suave-2.jpg" alt="recetas Item">
                     <a href="recetasWarpsVegetariano.html" title="Title Two" rel="recetas" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Warps Vegetariano</h3>
-                        <span class="suave-span">Sal de Campo Suave</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-warps">Warps Vegetariano</h3>
+                        <span class="suave-span" data-section="recetas" data-value="suave-sal">Sal de Campo Suave</span>
                     </figcaption>
                 </figure>
 
@@ -562,8 +570,8 @@
                     <img class="img-responsive" src="img/recetas/pimientas-2.jpg" alt="recetas Item">
                     <a href="recetasBife.html" title="Title Three" rel="recetas" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Ojo de Bife Grillado</h3>
-                        <span class="pimientas-span">Sal de Campo 5 Pimientas</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-ojoBife">Ojo de Bife Grillado</h3>
+                        <span class="pimientas-span" data-section="recetas" data-value="5p-sal">Sal de Campo 5 Pimientas</span>
                     </figcaption>
                 </figure>
 
@@ -571,8 +579,8 @@
                     <img class="img-responsive" src="img/recetas/ahumada-1.jpg" alt="recetas Item">
                     <a href="recetasPastaSalmonAhumado.html" title="Title Four" rel="recetas" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Ceviche Ahumado (con Salmón)</h3>
-                        <span class="ahumada-span">Sal de Campo Ahumada</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-ceviche">Ceviche Ahumado (con Salmón)</h3>
+                        <span class="ahumada-span" data-section="recetas" data-value="ahumada-sal">Sal de Campo Ahumada</span>
                     </figcaption>
                 </figure>
 
@@ -580,8 +588,8 @@
                     <img class="img-responsive" src="img/recetas/marina-2.jpg" alt="recetas Item">
                     <a href="recetasEscabechedePollo.html" title="Title Three" rel="recetas" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Escabeche de Pollo</h3>
-                        <span class="marina-span">Sal de Campo Marina</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-escabeche">Escabeche de Pollo</h3>
+                        <span class="marina-span" data-section="recetas" data-value="marina-sal">Sal de Campo Marina</span>
                     </figcaption>
                 </figure>
 
@@ -589,8 +597,8 @@
                     <img class="img-responsive" src="img/recetas/marina-esp-2.jpg" alt="recetas Item">
                     <a href="recetasVegetalesBraseados.html" title="Title Four" rel="recetas" class="fancybox"><span class="plus"></span></a>
                     <figcaption class="mask">
-                        <h3 class="receta-nombre">Vegetales Braseados</h3>
-                        <span class="marina-span">Sal de Campo Marina con Especias</span>
+                        <h3 class="receta-nombre" data-section="recetas" data-value="title-vegetales">Vegetales Braseados</h3>
+                        <span class="marina-span" data-section="recetas" data-value="marinaesp-sal">Sal de Campo Marina con Especias</span>
                     </figcaption>
                 </figure>
 
@@ -609,8 +617,7 @@
                 <div class="row">
 
                     <div class="section-title text-center wow fadeInDown">
-                        <h2>Contactanos</h2>
-                        <!-- <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p> -->
+                        <h2 data-section="contacto" data-value="titulo">Contactanos</h2>
                     </div>
                     
                     <div class="col-md-8 col-sm-9 wow fadeInLeft">
@@ -624,17 +631,17 @@
 
                     <div class="col-md-4 col-sm-3 wow fadeInRight contact-items">
                         <a id="text-mail" href="mailto:info@saldecampo.com.ar?" target="_blank"><div class="contact-details email">
-                            <br><span>e-mail <img class="icon-contact" src="img/icons/icons-email.png" alt="e-mail"></span>
+                            <br><span data-section="contacto" data-value="email">e-mail</span> <img class="icon-contact" src="img/icons/icons-email.png" alt="e-mail"></span>
                             <p>info@saldecampo.com.ar</p><br> 
                         </div></a><!-- end .contact-details -->
 
                         <a id="text-wsp" href="https://walink.co/8f1dc3" target="_blank"><div class="contact-details whatsapp">
-                            <br><span class="contact-icon">whatsapp <img class="icon-contact" src="img/icons/icons-whatsapp-black.png" alt="whatsapp"></span>
+                            <br><span class="contact-icon" data-section="contacto" data-value="whatsapp">whatsapp</span> <img class="icon-contact" src="img/icons/icons-whatsapp-black.png" alt="whatsapp"></span>
                             <p >+54 9 351 3110495 </p><br>
                         </div></a> <!-- end .contact-details -->
 
                         <a id="text-gps" href="https://maps.app.goo.gl/QcCowNuHKyMQWCnb7" target="_blank"><div class="contact-details gps">
-                            <br><span class="contact-icon">ubicación <img class="icon-contact" src="img/icons/icons-gps.png" alt="gps"></span>
+                            <br><span class="contact-icon" data-section="contacto" data-value="ubicacion">ubicación</span> <img class="icon-contact" src="img/icons/icons-gps.png" alt="gps"></span>
                             <p>Agustín Garzón 2076, X5006FUT – Córdoba - Argentina</p><br>
                         </div></a> <!-- end .contact-details -->
                     </div> <!-- .col-md-4 -->
@@ -659,7 +666,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encontranos en nuestras Redes</h3>
+                            <h3 data-section="footer" data-value="redes">Encontranos en nuestras Redes</h3>
                              <!-- Social Icons -->
                         <div class="redes-nav" id="redes-footer">
                             <a class="icons-nav" href="https://www.instagram.com/saldecampo/" target="_blank">
@@ -679,10 +686,7 @@
                         </div>
 
                         <div class="copyright">
-
-                            <!-- <p class="p-copyright" >Theme by <a href="http://graphberry.com">GraphBerry.com</a> Developed by <a target="_blank" href="http://www.themefisher.com">Themefisher</a></p> -->
-                           
-                            <p>by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
+                            <p data-section="footer" data-value="derechos">by <a href="http://saldecampo.com" target="_blank">Sal de Campo</a> Developed by <a target="_blank" href="http://lucasconti.netlify.app">Lucas Conti Developer</a></p>
                         </div>
 
                     </div>
@@ -724,7 +728,7 @@
         <script src="js/galeria-filtro.js"></script>
         <!-- Productos -->
         <script src="js/productos.js"></script>
-        <!-- Botón Catálogo -->
-        <!-- <script src="js/script.js"></script> -->
+        <!-- Idiomas -->
+        <script src="js/languages.js"></script>
     </body>
 </html>

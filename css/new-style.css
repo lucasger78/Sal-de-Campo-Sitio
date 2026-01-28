@@ -96,7 +96,17 @@
     align-items: start !important; /* Centra los íconos verticalmente */
     gap: 20px; /* Espacio entre íconos */
     margin-top: 30px;
-    margin-left: -65px;
+    margin-left: -25px;
+    
+}
+.redes-nav-recetas {
+    display: flex;
+    justify-content:center; /* Centra los íconos horizontalmente */
+    align-items: start !important; /* Centra los íconos verticalmente */
+    gap: 20px; /* Espacio entre íconos */
+    margin-top: 30px;
+    margin-left: -25px;
+    margin-right: 10px;
     
 }
 
@@ -432,6 +442,30 @@
   }
 
 /* END WHATSAPP */ 
+
+
+.avb-lenguage {
+    font-size: 14px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    padding-right: 10px;
+}
+
+.icons-translate {
+    font-size: 26px !important;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-tienda {
+    margin-right: 10px !important;
+}
+
+.cabecera-nav{
+    background-color: rgba(248, 3, 3, 0.8);
+    
+} 
+
 
 
  
